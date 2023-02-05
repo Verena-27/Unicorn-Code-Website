@@ -1,19 +1,22 @@
 .logo{
 	height:auto;
-	max-width: 40%;
-	max-height: 40%;
+	max-width: 800px;
+	max-height: 166px;
 }
 
+body{
+  background-color: #323232;
+}
+
+
+/*pink logo color f0069a
+purple logo color 9f0b68*/
 .line{
-	flex-grow: 1;
-	height: 5px;
-    align:"left";
-    border-bottom: 6px solid rgb(30, 30, 30);
-    color:"blue";
-    padding: 5px;
-  	text-align: center;
-  	flex-shrink: 1;
-  	min-width: 20%;
+  height: 5px;
+  padding: 5px;
+  border-bottom: 6px solid #e90696;
+  text-align: center;
+  flex-grow: 5;
 }
 
 .header{
@@ -22,15 +25,15 @@
 
 .flex-container{
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
+	/*flex-direction: row; default
+	flex-wrap: nowrap; default*/ 
 	align-items: center;
-	justify-content: space-around;
-	width: 100%;
+	justify-content: space-evenly;
+  gap:10px;
 }
 
 .flex-item {
-  padding: 5px;
+  padding: 3px;
   text-align: center;
 }
 
@@ -38,28 +41,6 @@
 
 
 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 50px;
-
-}
-
-.grid-item {
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.vertical-line{ 
-width: 50%;
-margin: auto;
-margin-top: 50%;
-margin-bottom: 50%;
-transform: rotate(90deg);
-border-color: purple;
-}
 
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -77,7 +58,7 @@ border-color: purple;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #e90696;
   display: block;
 }
 
