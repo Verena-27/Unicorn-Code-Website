@@ -6,6 +6,18 @@
 		Unicornsco.de	
 	</TITLE>
 
+	<script>
+		var landingText = "Willkommen"
+		
+		function getLandingText(){
+			console.log(document.getElementById("mainText").value);
+			document.getElementById("mainText").innerHTML = landingText;
+		}
+
+
+
+	</script>
+
 </HEAD>
 
 <BODY>
@@ -25,16 +37,18 @@
 	</div>
 
 	<span style="font-family: Lucida Console">
-		<div class="sidenav">
-			<a href="#main">Main</a>
-			<a href="#registration">Anmeldung</a>
-			<a href="#aboutus">Über uns</a>
-			<a href="#contact">Kontakt</a>
-		</div>
+		<div class="flex-container-main">
+			<div class="sidenav flex-item-main">
+				<a id="landing" onclick="getLandingText()">Main</a>
+				<a href="#registration">Anmeldung</a>
+				<a href="#aboutus">Über uns</a>
+				<a href="#contact">Kontakt</a>
+			</div>
 
-		<div class="main">
-			<h2>Test</h2>
-			<p>This sidebar is a test and always shown. TODO insert javascript.</p>
+			<div class="flex-item-main">
+				<h2>Test</h2>
+				<p id="mainText">This sidebar is a test and always shown. TODO insert javascript.</p>
+			</div>
 		</div>
 	</span>
 </div>
