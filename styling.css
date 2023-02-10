@@ -5,9 +5,14 @@
 }
 
 body{
-  background-color: #323232;
+  background-color: #222222;
 }
 
+.header-container{
+  position: relative;
+  width: 100%;
+  margin-top: 20;
+}
 
 /*pink logo color f0069a
 purple logo color 9f0b68*/
@@ -23,29 +28,45 @@ purple logo color 9f0b68*/
 	padding: var(--space-xs);
 }
 
-.flex-container{
-	display: flex;
-	/*flex-direction: row; default
-	flex-wrap: nowrap; default*/ 
-	align-items: center;
+.rainbow-scroll{
+  margin-left:55%;
+}
+
+.flex-container-top{
+	display: flex; 
+  position: absolute;
+  flex-direction: column;
+	/*align-items: flex-end;*/
 	justify-content: space-evenly;
   gap:10px;
+  width: 100%;
+  height: 100%;
+  top: 20;
+  left: 0;
 }
 
 .flex-container-main{
   display: flex;
-  flex-direction: row; 
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  color: #ffffff;
   gap:10px;
 }
 
 .flex-item-main {
-  padding: 20px;
+  padding: 20px 0px 0px 5%;
   text-align: left;
 }
 
-.flex-item {
+.flex-item-nav {
+  padding: 20px;
+  position: relative;
+  margin-left: 25%;
+  margin-top: 10%;
+  text-align: left;
+}
+
+.flex-item-top{
   padding: 3px;
   text-align: center;
 }
@@ -54,7 +75,7 @@ purple logo color 9f0b68*/
   height: 100%; /* Full-height: remove this if you want "auto" height */
   min-width: 150px; /* Set the width of the sidebar */
   /*position: absolute;  Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
+  z-index: 1; /* Stay on top stack*/
   background-color: #111; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;

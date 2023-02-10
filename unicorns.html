@@ -3,52 +3,82 @@
 <HEAD>
 <link rel="stylesheet" href="styling.css">
 	<TITLE>
-		Unicornsco.de	
+		unicornsco.de	
 	</TITLE>
 
 	<script>
-		var landingText = "Willkommen"
-		
-		function getLandingText(){
-			console.log(document.getElementById("mainText").value);
-			document.getElementById("mainText").innerHTML = landingText;
+
+		function setLandingText(){
+			document.getElementById("headText").innerHTML = "Willkommen";
+			document.getElementById("paragraphText").innerHTML = "Du willst programmieren lernen?";
 		}
 
+		function setDatesText(){
+			document.getElementById("headText").innerHTML = "Termine";
+			document.getElementById("paragraphText").innerHTML = "Termine stuff";
+		}
 
+		function setRegistrationText(){
+			document.getElementById("headText").innerHTML = "Anmeldung";
+			document.getElementById("paragraphText").innerHTML = "Anmeldung stuff";
+		}
 
+		function setAboutText(){
+			document.getElementById("headText").innerHTML = "Über uns";
+			document.getElementById("paragraphText").innerHTML = "About us stuff";
+		}
+
+		function setContactText(){
+			document.getElementById("headText").innerHTML = "Kontakt";
+			document.getElementById("paragraphText").innerHTML = "Contact stuff";
+		}
 	</script>
 
 </HEAD>
 
 <BODY>
-	<div class="flex-container">
-		<div class="header line">
-			<!--<div class="vertical-line"></div>-->
-			<!--hello1
-			<hr width=100% 
-		        align="left" 
-		        position=absolute
-		        color="blue">-->
-		</div>
-		<div class="flex-item header">
-			<img src="unicorn_code_transp.png" alt="UnicornsLogo" class="logo"> 
-		</div>
-		<div class="line header"></div>
-	</div>
+	<div class="header-container">
+		<marquee class="rainbow-scroll" id="scroll_logo" behavior="scroll" direction="right" loop="" scrollAmount=20
 
+
+
+		 onfinish="handleAnimation()">
+	        <img src="img/rainbow_scroll.png" style="max-width: 60%;">
+	    </marquee>
+	    <script>
+	    	document.getElementById("scroll_logo")
+	    	function handleAnimation(){
+	    		console.log("stopped");
+	    	}
+
+
+	    </script>
+
+		<div class="flex-container-top">
+			
+			<div class="flex-item-top header">
+				<img src="img/Logo_Font_Neon.png" alt="UnicornsLogo" class="logo"> 
+			</div>
+			<div class="line header"></div>
+		</div>
+	</div>
 	<span style="font-family: Lucida Console">
 		<div class="flex-container-main">
-			<div class="sidenav flex-item-main">
-				<a id="landing" onclick="getLandingText()">Main</a>
-				<a href="#registration">Anmeldung</a>
-				<a href="#aboutus">Über uns</a>
-				<a href="#contact">Kontakt</a>
+			<div class="sidenav flex-item-nav">
+				<a href="#landing" onclick="setLandingText()">Willkommen</a>
+				<a href="#dates" onclick="setDatesText()">Termine</a>
+				<a href="#registration" onclick="setRegistrationText()">Anmeldung</a>
+				<a href="#aboutus" onclick="setAboutText()">Über uns</a>
+				<a href="#contact" onclick="setContactText()">Kontakt</a>
 			</div>
 
 			<div class="flex-item-main">
-				<h2>Test</h2>
-				<p id="mainText">This sidebar is a test and always shown. TODO insert javascript.</p>
+				<h2 id="headText"></h2>
+				<p id="paragraphText"></p>
 			</div>
+			<script>
+				setLandingText();
+			</script>
 		</div>
 	</span>
 </div>
