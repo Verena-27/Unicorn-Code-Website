@@ -19,7 +19,7 @@ purple logo color 9f0b68*/
 .line{
   height: 5px;
   padding: 5px;
-  border-bottom: 6px solid #e90696;
+  border-bottom: 6px solid #fc39eeff;
   text-align: center;
   flex-grow: 5;
 }
@@ -62,7 +62,7 @@ purple logo color 9f0b68*/
   padding: 20px;
   position: relative;
   margin-left: 25%;
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: left;
 }
 
@@ -78,7 +78,7 @@ purple logo color 9f0b68*/
   z-index: 1; /* Stay on top stack*/
   background-color: #111; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 /* The navigation menu links */
@@ -86,7 +86,7 @@ purple logo color 9f0b68*/
   padding: 6px 8px 6px 8px;
   text-decoration: none;
   font-size: 25px;
-  color: #e90696;
+  color: #fc39eeff;
   display: block;
 }
 
