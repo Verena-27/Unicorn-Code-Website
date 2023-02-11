@@ -24,12 +24,12 @@ purple logo color 9f0b68*/
   flex-grow: 5;
 }
 
-.header{
-	padding: var(--space-xs);
+.scroll-right{
+  margin-left:55%;
 }
 
-.rainbow-scroll{
-  margin-left:55%;
+.scroll-left{
+  margin-right: 55%;
 }
 
 .flex-container-top{
@@ -38,10 +38,10 @@ purple logo color 9f0b68*/
   flex-direction: column;
 	/*align-items: flex-end;*/
 	justify-content: space-evenly;
-  gap:10px;
+  gap:0px;
   width: 100%;
   height: 100%;
-  top: 20;
+  top: 0;
   left: 0;
 }
 

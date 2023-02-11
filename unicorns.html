@@ -38,19 +38,27 @@
 
 <BODY>
 	<div class="header-container">
-		<marquee class="rainbow-scroll" id="scroll_logo" behavior="scroll" direction="right" loop="" scrollAmount=20
-
-
-
-		 onfinish="handleAnimation()">
+		<marquee id="rainbow-scroll-right" class="scroll-right" id="scroll_logo" behavior="scroll" direction="right"loop="" scrollAmount=20 onfinish="handleAnimation()">
 	        <img src="img/rainbow_scroll.png" style="max-width: 60%;">
 	    </marquee>
-	    <script>
-	    	document.getElementById("scroll_logo")
-	    	function handleAnimation(){
-	    		console.log("stopped");
-	    	}
 
+	    <marquee id="raibow-scroll-left" class="scroll-left" id="scroll_logo" behavior="scroll" direction="right"loop="" scrollAmount=20 onfinish="handleAnimation()">
+	        <img src="img/rainbow_scroll.png" style="max-width: 60%;">
+	    </marquee>
+
+	    <script>
+
+		    const myInterval = setInterval(myTimer, 3000); //3 seconds sleep
+
+			function myTimer() {
+				console.log("Start Animation right");
+			  	document.getElementById('rainbow-scroll-right').start();
+			  	myStopFunction();
+			}
+
+			function myStopFunction() {
+			  clearInterval(myInterval);
+			}
 
 	    </script>
 
