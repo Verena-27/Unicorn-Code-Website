@@ -1,51 +1,40 @@
 .logo{
-	max-width: 20%;
-	max-height: 20%;
+  position: absolute;
 }
 
 .logo1{ /*plain logo in the middle*/
   position: relative;
+  width: 20%;
+  height: 20%;
+  margin-top: -3%;
+  animation-iteration-count: infinite;
   animation-name: animation1;
-  animation-duration: 3s;
+  animation-duration: 15s;
   animation-timing-function: linear;
   animation-fill-mode: backwards;
 }
 
 @keyframes animation1 {
-  0%   {left:40%; opacity: 1;}
-  100% {left:40%; opacity: 0;}
+  0%   {left:40%; opacity: 1}
+  30%, 70% {left:40%; opacity: 0;}
+  100% {left:40%; opacity: 1;}
 }
 
 .logo2{ /*scroll from middle to right end*/
   position: relative;
+  width: 20%;
+  height: 20%;
+  margin-top: -3%;
+  animation-iteration-count: infinite;
   animation-name: animation2;
-  animation-duration: 6s;
-  animation-delay: 3s;
+  animation-duration: 15s;
   animation-timing-function: linear;
-  /*animation-fill-mode: forwards;*/
+  animation-fill-mode: forwards;
 }
 
 @keyframes animation2 {
-  0%   {left:40%; opacity: 1;}
-  100% {left:100%; opacity: 0;}
-}
-
-.logo3{ /*scroll from left end to middle*/
-  position: relative;
-  animation-name: animation3;
-  animation-duration: 6s;
-  animation-timing-function: linear;
-   animation-delay: 9s;
-  animation-fill-mode: backwards;
-}
-
-@keyframes animation3 {
-  0%   {left:-10%; opacity: 1;}
-  100% {left:40%; opacity: 1;}
-}
-
-.all-images{
-  position: relative;
+  0%, 30% {left:-20%;}
+  100% {left:100%;}
 }
 
 .image-container{
@@ -55,12 +44,12 @@
 
 body{
   background-color: #222222;
+  font-family: Lucida Console
 }
 
-.header-container{
-  position: relative;
-  width: 100%;
-  margin-top: 20;
+.font{
+  width: 30%;
+  height: 30%;
 }
 
 /*pink logo color f0069a
@@ -73,17 +62,29 @@ purple logo color 9f0b68*/
   flex-grow: 5;
 }
 
+.header-container{
+  position: absolute;
+  width: 100%;
+}
+
 .flex-container-top{
 	display: flex; 
-  position: absolute;
+  align-items: center;
+  justify-content: space-evenly; 
+
+ 
+  /*position: absolute;
+   flex-direction: column;
   flex-direction: column;
-	/*align-items: flex-end;*/
+	/*align-items: flex-end;
+  align-items: center;
 	justify-content: space-evenly;
   gap:0px;
   width: 100%;
   height: 100%;
+  margin-top: 20;
   top: 0;
-  left: 0;
+  left: 0;*/
 }
 
 .flex-container-main{
@@ -109,6 +110,7 @@ purple logo color 9f0b68*/
 
 .flex-item-top{
   padding: 3px;
+  display: flex;
   text-align: center;
 }
 
