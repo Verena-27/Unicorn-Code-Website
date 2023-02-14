@@ -1,7 +1,56 @@
 .logo{
-	height:auto;
-	max-width: 800px;
-	max-height: 166px;
+	max-width: 20%;
+	max-height: 20%;
+}
+
+.logo1{ /*plain logo in the middle*/
+  position: relative;
+  animation-name: animation1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animation1 {
+  0%   {left:40%; opacity: 1;}
+  100% {left:40%; opacity: 0;}
+}
+
+.logo2{ /*scroll from middle to right end*/
+  position: relative;
+  animation-name: animation2;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  /*animation-fill-mode: forwards;*/
+}
+
+@keyframes animation2 {
+  0%   {left:40%; opacity: 1;}
+  100% {left:100%; opacity: 0;}
+}
+
+.logo3{ /*scroll from left end to middle*/
+  position: relative;
+  animation-name: animation3;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+   animation-delay: 9s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animation3 {
+  0%   {left:-10%; opacity: 1;}
+  100% {left:40%; opacity: 1;}
+}
+
+.all-images{
+  position: relative;
+}
+
+.image-container{
+  position: absolute;
+  overflow: hidden;
 }
 
 body{
@@ -22,14 +71,6 @@ purple logo color 9f0b68*/
   border-bottom: 6px solid #fc39eeff;
   text-align: center;
   flex-grow: 5;
-}
-
-.scroll-right{
-  margin-left:55%;
-}
-
-.scroll-left{
-  margin-right: 55%;
 }
 
 .flex-container-top{
