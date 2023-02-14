@@ -143,7 +143,27 @@ purple logo color 9f0b68*/
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;} /*margin*/
-  .sidenav a {font-size: 18px;}
+@media screen {
+  .sidenav {padding-top: 15px; margin-left: 3%;} /*margin*/
+  .sidenav a{font-size: 40; padding: 6px 8px 30px 8px;}
+  .flex-container-top{height: 20%}
+  .font{width: 80%; height: 60%;}
+  .logo2{width: 40%; height: 40%; animation-duration: 10s;}
+  @keyframes animation2 {
+    0%, 30% {left:-40%;}
+    80% {opacity: 1}
+    100% {left:60%; opacity: 0}
+  }
+  .logo1{width: 40%; height: 40%;animation-duration: 10s;}
+  @keyframes animation1 {
+    0%   {left:30%; opacity: 1}
+    30%, 70% {left:30%; opacity: 0;}
+    100% {left:30%; opacity: 1;}
+  }
+  body{
+    font-size: 30;
+  }
+  
+
+  
 }
