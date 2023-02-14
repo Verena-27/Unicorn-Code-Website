@@ -34,7 +34,8 @@
 
 @keyframes animation2 {
   0%, 30% {left:-20%;}
-  100% {left:100%;}
+  80% {opacity: 1}
+  100% {left:80%; opacity: 0}
 }
 
 .image-container{
