@@ -143,7 +143,7 @@ purple logo color 9f0b68*/
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen {
+@media screen and (max-height: 450px){
   .sidenav {padding-top: 15px; margin-left: 3%;} /*margin*/
   .sidenav a{font-size: 40; padding: 6px 8px 30px 8px;}
   .flex-container-top{height: 20%}
