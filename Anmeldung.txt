@@ -1,0 +1,1 @@
+"Bitte meldet euch unter <a href= anmeldung@unicornsco.de> anmeldung@unicornsco.de</a> für die Kurse an. <br> Gebt in der Mail bitte folgende Daten an: <ul> <li> Vor- und Nachname <br> <li>für welchen Kurs möchtest du dich anmelden <br> <li>bringst du deinen eigenen Laptop mit oder möchtest du einen von uns ausleihen? </ul>"
