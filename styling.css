@@ -90,8 +90,7 @@ purple logo color 9f0b68*/
 
 .flex-container-main{
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
   color: #ffffff;
   gap:10px;
 }
@@ -99,12 +98,14 @@ purple logo color 9f0b68*/
 .flex-item-main {
   padding: 20px 0px 0px 5%;
   text-align: left;
+  max-width: 40%;
+  margin-top: 5%;
 }
 
 .flex-item-nav {
   padding: 20px;
   position: relative;
-  margin-left: 25%;
+  margin-left: 23%;
   margin-top: 5%;
   text-align: left;
 }

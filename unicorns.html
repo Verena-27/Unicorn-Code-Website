@@ -7,54 +7,64 @@
 	</TITLE>
 
 	<script>
+		/*function readFile () {
+			console.log("TEST");
+		    const fs = require('fs');
+		    const readline = require('readline');
+		    var file = './text.txt';
+
+		    var r = readline.createInterface({
+		    	input: f.createReadStream(file)
+		    });
+
+		    r.on('line', function(text){
+		    	console.log(text);
+		    });
+
+     	}
+		fetch('text.txt')
+		    .then(response => response.text())
+		    .then(data => console.log(data));
+     	*/
+
+		
 
 		function setLandingText(){
-			document.getElementById("headText").innerHTML = "Willkommen";
-			document.getElementById("paragraphText").innerHTML = "Du willst programmieren lernen?";
+			document.getElementById("headText").innerHTML = "Willkomen bei den Unicorns!";
+			document.getElementById("paragraphText").innerHTML = " Du willst programmieren lernen? Hast Lust, dein eigenes Spiel zu entwickeln?<br><br>\
+				Dann besuch doch einen Kurs von uns! Wir bieten Programmierkurse für FINTA*s (Female, Inter, Trans, Agender, alle daneben und dazwischen) an, für die du kein Vorwissen brauchst!<br><br>\
+				Unser nächster Kurs ist der Osterferienworkshop am 03.04 - 05.04.2023.\
+			  	Um dich für den Workshop anzumelden, schau im Abschnitt Anmeldung nach.";
 		}
 
 		function setDatesText(){
 			document.getElementById("headText").innerHTML = "Termine";
-			document.getElementById("paragraphText").innerHTML = "Termine stuff";
+			document.getElementById("paragraphText").innerHTML = "Unser nächster Termin ist ein Workshop in den Osterferien.<br><br>\
+			Wir werden uns die absoluten Basics von Python anschauen und das Modul Turtle für die Programmierung von Spielen nutzen. Wie der Name schon sagt, werden wir unter anderem Labyrinthe für eine Schildkröte bauen und sie Formen zeichnen lassen.<br><br>\
+			Der Workshop findet vom 03.04 - 05.04.2023 jeweils von 10-15 Uhr in der Bürgerschule Stadtteilzentrum Nordstadt statt. Ihr könnt dazu euren eigenen Laptop mitbringen oder euch von uns einen leihen. Der Kurs ist kostenlos!<br><br>\
+			Nach den Osterferien starten fortlaufende Gruppen, für die wir uns einmal die Woche treffen. Auch dieser Kurs ist kostenlos!<br><br>\
+			Schau im Abschnitt Anmeldung nach.";
 		}
 
 		function setRegistrationText(){
 			document.getElementById("headText").innerHTML = "Anmeldung";
-			document.getElementById("paragraphText").innerHTML = "Anmeldung stuff";
+			document.getElementById("paragraphText").innerHTML = "Bitte melde dich unter <a href=mailto:anmeldung@unicornsco.de> anmeldung@unicornsco.de</a> für die Kurse an. <br> Gib in deiner Mail bitte folgende Daten an: <ul> <li> Vor- und Nachname <br><li> wie alt bist du?<br><li>für welchen Kurs möchtest du dich anmelden?<br> <li>bringst du deinen eigenen Laptop mit oder möchtest du einen ausleihen? </ul>";
 		}
 
 		function setAboutText(){
 			document.getElementById("headText").innerHTML = "Über uns";
-			document.getElementById("paragraphText").innerHTML = "About us stuff";
+			document.getElementById("paragraphText").innerHTML = "Wir sind eine Gruppe von  Informatiker*innen, die in Zusammenarbeit mit dem Chaos Computer Club Hannover junge FINTA*s für das Programmieren begeistern wollen.<br><br> Wir bieten sowohl Workshops in den Ferien, als auch wöchentliche AG-Treffen an. In den Ferien machen wir einen Programmier-Crash-Kurs, in den forlaufenden Gruppen nehmen wir uns ein größeres Projekt vor und programmieren das zusammen!<br> Die aktuellen Termine findet ihr unter dem Abschnitt Termine.<br><br> Alle unsere Angebote richten sich an FINTA*s zwischen 13 und 16 Jahren ohne Vorkenntnisse. <br>Laptops können selber mitgebracht werden, falls keiner vorhanden ist, stellen wir euch gerne einen zur Verfügung. Alle unsere Angebote sind kostenlos!<br><br> Bei Fragen schreibt uns gerne an <a href=mailto:info@unicornsco.de> info@unicornsco.de</a>, wir freuen uns auf euch :)";
 		}
 
 		function setContactText(){
 			document.getElementById("headText").innerHTML = "Kontakt";
-			document.getElementById("paragraphText").innerHTML = "Contact stuff";
+			document.getElementById("paragraphText").innerHTML = "Ihr könnt uns allgemein per Mail unter <a href=mailto:info@unicornsco.de> info@unicornsco.de</a> erreichen. <br>Unsere Kurse finden jeweils hier statt: <p>STADTTEILZENTRUM NORDSTADT e.V BÜRGERSCHULE <br> Klaus-Müller-Kilian-Weg 2 <br> 30167 Hannover";
 		}
 	</script>
 
 </HEAD>
 
-<BODY>
-	<!--<div class="header-container">
-		<div class="flex-container-top">
-			<div class="image-container">
-				<img class="logo1" src="img/unicorn_plain.png" alt="UnicornsLogo"> 
-	    	</div>
-	    	<div class="image-container">
-	    		<img class="logo2" src="img/rainbow_scroll.png" alt="UnicornsLogo">
-	    	</div>
-	    	<div class="image-container">
-	    		<img class="logo3" src="img/rainbow_scroll.png" alt="UnicornsLogo"> 
-	    	</div>
-	    	<div class="flex-item-top">
-				<img class="logo" src="img/Logo_Font.png" alt="UnicornsLogo" > 
-			</div>
-		<div class="line"></div>
-		</div>
-	
-	</div>-->
+<BODY > <!--onload="readFile()"-->
 	<div class="flex-container-top">
 		<div class="header-container">
 			<img class="logo2" src="img/rainbow_scroll.png" alt="UnicornsLogo">
