@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+
 .logo{
   position: absolute;
 }
@@ -45,9 +49,10 @@
 
 body{
   background-color: #222222;
-  font-family: "Lucida Console", "Arial"
+  font-family: 'Roboto Mono', monospace; 
 }
 
+/*"Lucida Console"*/
 .font{
   width: 30%;
   height: 30%;
