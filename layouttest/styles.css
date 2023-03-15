@@ -62,8 +62,8 @@ The content `<div>` is where all your content goes.
 }
 
 .font{
-  width: 30%;
-  height: 30%;
+  width: 360px;
+  height: ;
 }
 
 .header-container{
@@ -79,8 +79,8 @@ The content `<div>` is where all your content goes.
 
 .logo1{ /*plain logo in the middle*/
   position: relative;
-  width: 20%;
-  height: 20%;
+  width: 240px;
+  height: 80px;
   margin-top: -3%;
   animation-iteration-count: infinite;
   animation-name: animation1;
@@ -97,8 +97,8 @@ The content `<div>` is where all your content goes.
 
 .logo2{ /*scroll from left to right end*/
   position: relative;
-  width: 20%;
-  height: 20%;
+  width: 240px;
+  height: 80px;
   margin-top: -3%;
   animation-iteration-count: infinite;
   animation-name: animation2;
@@ -108,9 +108,9 @@ The content `<div>` is where all your content goes.
 }
 
 @keyframes animation2 {
-  0%, 30% {left:-80%;opacity: 0}
+  0%, 30% {left:-150%;opacity: 0}
   50% {opacity: 1}
-  100% {left:60%; opacity: 0}
+  100% {left:120%; opacity: 0}
 }
 
 .header {
