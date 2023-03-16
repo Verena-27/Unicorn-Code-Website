@@ -71,7 +71,7 @@ The content `<div>` is where all your content goes.
 }
 
 .flex-container-top{
-    height: 7em;
+    height: 6em;
     display: flex; 
   align-items: center;
   justify-content: space-evenly;
