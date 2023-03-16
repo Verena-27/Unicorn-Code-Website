@@ -109,9 +109,9 @@ The content `<div>` is where all your content goes.
 }
 
 @keyframes animation2 {
-  0%, 30% {left: -150%;opacity: 0}
+  0%, 30% {left: -70%;opacity: 0}
   50% {opacity: 1}
-  100% {left:120%; opacity: 0}
+  100% {left:100%; opacity: 0}
 }
 
 .animation-container{
