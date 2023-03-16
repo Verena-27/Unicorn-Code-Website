@@ -63,7 +63,6 @@ The content `<div>` is where all your content goes.
 
 .font{
   width: 360px;
-  height: ;
 }
 
 .header-container{
@@ -72,9 +71,10 @@ The content `<div>` is where all your content goes.
 }
 
 .flex-container-top{
+    height: 7em;
     display: flex; 
   align-items: center;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
 }
 
 .logo1{ /*plain logo in the middle*/
@@ -100,6 +100,7 @@ The content `<div>` is where all your content goes.
   width: 240px;
   height: 80px;
   margin-top: -3%;
+  top: 2.5em;
   animation-iteration-count: infinite;
   animation-name: animation2;
   animation-duration: 15s;
@@ -108,15 +109,34 @@ The content `<div>` is where all your content goes.
 }
 
 @keyframes animation2 {
-  0%, 30% {left:-150%;opacity: 0}
+  0%, 30% {left: -150%;opacity: 0}
   50% {opacity: 1}
   100% {left:120%; opacity: 0}
 }
 
+.animation-container{
+    width: 100%;
+    height: 7em ;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+}
+
+.animation-container .header-container{
+    width: 100%;
+}
+
+#main{
+    position: relative;
+}
+
 .header {
      margin: 0;
+     box-sizing: border-box;
+     overflow: hidden;
+     width: 100%;
      text-align: center;
-     padding: 2.5em 2em 0;
+     padding-top: 2.5em;
      border-bottom: 4px solid #e203d3;
  }
     /*.header h1 {
@@ -135,7 +155,6 @@ The content `<div>` is where all your content goes.
     margin: 50px 0 20px 0;
     font-weight: 300;
 }
-
 
 
 /*
@@ -273,7 +292,6 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 */
 @media (min-width: 48em) {
 
-    .header,
     .content {
         padding-left: 2em;
         padding-right: 2em;
