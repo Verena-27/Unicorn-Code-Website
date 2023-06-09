@@ -13,34 +13,45 @@
     function setLandingText(){
             document.getElementById("headText").innerHTML = "Willkommen bei den Unicorns!";
             document.getElementById("paragraphText").innerHTML = " Du willst programmieren lernen? Hast Lust, dein eigenes Spiel zu entwickeln?<br><br>\
-                Dann besuch doch einen Kurs von uns! Wir bieten Programmierkurse für FINTA*s (Female, Inter, Trans, Agender, alle daneben und dazwischen) an, für die du kein Vorwissen brauchst!<br><br>\
-                Unser nächster Kurs ist der Osterferienworkshop am 03.04 - 05.04.2023.\
-                Um dich für den Workshop anzumelden, schau im Abschnitt Anmeldung nach.";
+                Dann besuch doch einen Kurs von uns! Wir bieten Programmierkurse für FINTA*s (Female, Inter, Trans, Agender, non-binary) an, für die du kein Vorwissen brauchst!";
+                document.getElementById("registerContainer").innerHTML = '';
         }
 
         function setDatesText(){
             document.getElementById("headText").innerHTML = "Termine";
-            document.getElementById("paragraphText").innerHTML = "Unser nächster Termin ist ein Workshop in den Osterferien.<br><br>\
-            Wir werden uns die absoluten Basics von Python anschauen und das Modul Turtle für die Programmierung von Spielen nutzen. Wie der Name schon sagt, werden wir unter anderem Labyrinthe für eine Schildkröte bauen und sie Formen zeichnen lassen.<br><br>\
-            Der Workshop findet vom 03.04 - 05.04.2023 jeweils von 10-15 Uhr in der Bürgerschule Stadtteilzentrum Nordstadt statt. Ihr könnt dazu euren eigenen Laptop mitbringen oder euch von uns einen leihen. Der Kurs ist kostenlos!<br><br>\
-            Nach den Osterferien starten fortlaufende Gruppen, für die wir uns einmal die Woche treffen. Auch dieser Kurs ist kostenlos!<br><br>\
+            document.getElementById("paragraphText").innerHTML = "Vom 14.-16.07.2023 findet der <a href=https://hackover.de/> Hackover</a> beim Chaos Computer Club in Hannover statt. Dort gibt es allerlei zu entdecken und erleben. Kommt vorbei, wir werden dort etwas über die Unicorns erzählen!<br><br>\
+            Wir starten nach den Sommerferien mit unseren AGs für absolute Einsteiger*innen!<br><br>\
+            \
+            Die AG findet in der Bürgerschule Stadtteilzentrum Nordstadt statt. Ihr könnt dazu euren eigenen Laptop mitbringen oder euch von uns einen leihen. Der Kurs ist kostenlos!<br><br>\
+            <br>\
             Schau im Abschnitt Anmeldung nach.";
+            document.getElementById("registerContainer").innerHTML = '';
         }
 
-        function setRegistrationText(){
+        /*function setRegistrationText(){
             document.getElementById("headText").innerHTML = "Anmeldung";
             document.getElementById("paragraphText").innerHTML = "Bitte melde dich unter <a href=mailto:anmeldung@unicornsco.de> anmeldung@unicornsco.de</a> für die Kurse an. <br> Gib in deiner Mail bitte folgende Daten an: <ul> <li> Vor- und Nachname <br><li> wie alt bist du?<br><li>für welchen Kurs möchtest du dich anmelden?<br> <li>bringst du deinen eigenen Laptop mit oder möchtest du einen ausleihen? </ul>";
-        }
+            document.getElementById("registerContainer").innerHTML = '';
+        }*/
 
         function setAboutText(){
             document.getElementById("headText").innerHTML = "Über uns";
             document.getElementById("paragraphText").innerHTML = "Wir sind eine Gruppe von  Informatiker*innen, die in Zusammenarbeit mit dem Chaos Computer Club Hannover junge FINTA*s für das Programmieren begeistern wollen.<br><br> Wir bieten sowohl Workshops in den Ferien, als auch wöchentliche AG-Treffen an. In den Ferien machen wir einen Programmier-Crash-Kurs, in den forlaufenden Gruppen nehmen wir uns ein größeres Projekt vor und programmieren das zusammen!<br> Die aktuellen Termine findet ihr unter dem Abschnitt Termine.<br><br> Alle unsere Angebote richten sich an FINTA*s zwischen 13 und 16 Jahren ohne Vorkenntnisse. <br>Laptops können selber mitgebracht werden, falls keiner vorhanden ist, stellen wir euch gerne einen zur Verfügung. Alle unsere Angebote sind kostenlos!<br><br> Bei Fragen schreibt uns gerne an <a href=mailto:info@unicornsco.de> info@unicornsco.de</a>, wir freuen uns auf euch :)";
+            document.getElementById("registerContainer").innerHTML = '';
         }
 
         function setContactText(){
             document.getElementById("headText").innerHTML = "Kontakt";
             document.getElementById("paragraphText").innerHTML = "Ihr könnt uns allgemein per Mail unter <a href=mailto:info@unicornsco.de> info@unicornsco.de</a> erreichen. <br>Unsere Kurse finden jeweils hier statt: <p>STADTTEILZENTRUM NORDSTADT e.V BÜRGERSCHULE <br> Klaus-Müller-Kilian-Weg 2 <br> 30167 Hannover";
+            document.getElementById("registerContainer").innerHTML = '';
         }
+
+        function setRegistrationText(){
+            document.getElementById("headText").innerHTML = "Anmeldung";
+            document.getElementById("paragraphText").innerHTML = "Hier kannst du deine Anmeldung an uns (<a href=mailto:anmeldung@unicornsco.de>anmeldung@unicornsco.de</a>) für die Kurse abschicken.";
+            document.getElementById("registerContainer").innerHTML = '<object class="registerObject" data="test.html" ></object>';
+        }
+
     </script>
 
 </head>
@@ -61,9 +72,12 @@
                 <li class="pure-menu-item"><a href="#home" onclick="setLandingText()" class="pure-menu-link">Willkommen</a></li>
                 <li class="pure-menu-item"><a href="#dates" onclick="setDatesText()" class="pure-menu-link">Termine</a></li>
                 <li class="pure-menu-item"><a href="#register" onclick="setRegistrationText()" class="pure-menu-link">Anmeldung</a></li>
+                <!--<li class="pure-menu-item"><a href="#register" onclick="setRegistrationText()" class="pure-menu-link">Anmeldung</a></li>-->
                 <li class="pure-menu-item"><a href="#about" onclick="setAboutText()" class="pure-menu-link">Über uns</a></li>
                 <li class="pure-menu-item"><a href="#contact" onclick="setContactText()" class="pure-menu-link">Kontakt</a></li>
-                <li class="pure-menu-item"><a href="test.html"class="pure-menu-link">Test</a></li>
+                <!--<li class="pure-menu-item"><a href="test.html"class="pure-menu-link">Test</a></li>
+                <li class="pure-menu-item"><a href="#test" target="iframeRegister" class="pure-menu-link">Test</a></li>-->
+                
 
                 <!--<li class="pure-menu-item menu-item-divided pure-menu-selected">
                     <a href="#" class="pure-menu-link">Services</a>
@@ -97,6 +111,8 @@
         <div class="content">
             <h2 class="content-subhead" id="headText">Try Resizing your Browser</h2>
             <p id="paragraphText"></p>
+            <div id="registerContainer"></div>
+
         </div>
     </div>
     <script>

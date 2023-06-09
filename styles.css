@@ -61,6 +61,15 @@ The content `<div>` is where all your content goes.
     line-height: 1.6em;
 }
 
+#registerContainer{
+
+}
+
+.registerObject{
+    width:100%;
+    height:800px;
+}
+
 .font{
   width: 360px;
 }
@@ -155,7 +164,6 @@ The content `<div>` is where all your content goes.
     margin: 50px 0 20px 0;
     font-weight: 300;
 }
-
 
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that

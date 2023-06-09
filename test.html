@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8">
-<title>JavaScript Form Validation using a sample registration form</title>
-<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
-<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
-<link rel='stylesheet' href='form-validation.css' type='text/css' />
-<script src="sample-registration-form-validation.js"></script>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel='stylesheet' href='form-validation.css' type='text/css' />
+	<script src="form-validation.js"></script>
+	<link rel="stylesheet" href="styles.css">
 </head>
-<body onload="document.registration.userid.focus();">
-<h1>Registration Form</h1>
-Use tab keys to move from one input field to the next.
-<form name='registration' onSubmit="return formValidation();">
-<ul>
-<li><label for="username">Name:</label></li>
-<li><input type="text" name="username" size="50" /></li>
-<li><label for="address">Address:</label></li>
-<li><input type="text" name="address" size="50" /></li>
-<li><label for="country">Country:</label></li>
-<li><select name="country">
-<option selected="" value="Default">(Please select a country)</option>
-<option value="AF">Australia</option>
-<option value="AL">Canada</option>
-</select></li>
-<li><label for="email">Email:</label></li>
-<li><input type="text" name="email" size="50" /></li>
-<li><label for="desc">About:</label></li>
-<li><textarea name="desc" id="desc"></textarea></li>
-<li><input type="submit" name="submit" value="Submit" /></li>
-</ul>
-</form>
+<body > <!--onload="document.registration.userid.focus();"-->
+	<form name='registration' onSubmit="return formValidation();">
+		<ul>
+			<li><label for="name">Name:</label></li>
+			<li><input type="text" name="name" size="50" /></li>
+
+			<li><label for="age">Alter:</label></li>
+			<li><input type="text" name="age" size="50" /></li>
+
+			<li><label for="gender">Geschlecht:</label></li>
+			<li><select name="gender">
+				<option selected="" value="Default">(Bitte wähle aus)</option>
+				<option value="M">weiblich</option>
+				<option value="W">männlich</option>
+				<option value="D">divers</option>
+			</select></li>
+
+			<li><label for="email">Email:</label></li>
+			<li><input type="text" name="email" size="50" /></li>
+
+			<li><label for="laptop">Hast du einen eigenen Laptop?</li>
+			<li><input type="text" name="laptop" size="50" /></li>
+			<!--<li><input type="radio" value="Ja">
+  				<label>Ja</label><br>
+
+			 	<input type="radio" value="Nein">
+			  	<label>Nein</label><br>
+
+			  	<input type="radio" value="KA">
+			  	<label>Keine Angabe</label></label></li>-->
+
+			<li><label for="desc">Interesse an folgenden Angeboten:</label></li>
+			<li><textarea name="desc" id="desc"></textarea></li>
+
+			<li><label for="desc">Bemerkungen (optional):</label></li>
+			<li><textarea name="desc" id="desc"></textarea></li>
+
+			<li><input type="submit" name="submit" value="Email senden" /></li>
+		</ul>
+	</form>
 </body>
 </html>
