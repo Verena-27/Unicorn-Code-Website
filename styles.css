@@ -1,19 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-/*TODO
--add constants for animation x limits (menu width, side width)
--fix flex shrink of logo stuff
--shift logo down when display gets smaller as the hamburger icon overlaps it
--fix colors, especially of side nav
--add content, implement side nav
-*/
+
 
 body {
     color: #f2f2f2;
     background-color: black;
     font-family: 'Roboto Mono', monospace;
-
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .pure-img-responsive {

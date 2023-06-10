@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<link rel='stylesheet' href='form-validation.css' type='text/css' />
 	<script src="form-validation.js"></script>
-	<link rel="stylesheet" href="styles.css">
+	<!--<link rel="stylesheet" href="styles.css">-->
 </head>
 <body > <!--onload="document.registration.userid.focus();"-->
 	<form name='registration' onSubmit="return formValidation();">
@@ -26,12 +26,13 @@
 			<li><label for="email">Email:</label></li>
 			<li><input type="text" name="email" size="50" /></li>
 
-			<li><label for="laptop">Hast du einen eigenen Laptop?</li>
-			<li><input type="text" name="laptop" size="50" /></li>
+			<!--<li><label for="laptop">Hast du einen eigenen Laptop?</li>
+			<li><input type="text" name="laptop" size="50" /></li>-->
 
-			<!--<li><label id="gender">Sex:</label></li> works, andere schriftart?
-			<li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
-			<li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>-->
+			<li><label id="laptop">Hast du einen eigenen Laptop?</label></li> 
+			<li><input type="radio" name="laptop" value="Ja" /><span>Ja</span></li>
+			<li><input type="radio" name="laptop" value="Nein" /><span>Nein</span></li>
+			<li><input type="radio" name="laptop" id="ka" value="KA" /><span>Keine Angabe</span></li>
 
 			<li><label for="desc">Interesse an folgenden Angeboten:</label></li>
 			<li><textarea name="desc" id="desc"></textarea></li>
@@ -41,6 +42,10 @@
 
 			<li><input type="submit" name="submit" value="Email senden" /></li>
 		</ul>
+		<script>
+		    let radBtnDefault = document.getElementById("ka");
+		    radBtnDefault.checked = true;
+	   </script>
 	</form>
 </body>
 </html>

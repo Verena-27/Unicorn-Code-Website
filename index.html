@@ -13,8 +13,17 @@
     function setLandingText(){
             document.getElementById("headText").innerHTML = "Willkommen bei den Unicorns!";
             document.getElementById("paragraphText").innerHTML = " Du willst programmieren lernen? Hast Lust, dein eigenes Spiel zu entwickeln?<br><br>\
-                Dann besuch doch einen Kurs von uns! Wir bieten Programmierkurse für FINTA*s (Female, Inter, Trans, Agender, non-binary) an, für die du kein Vorwissen brauchst!";
-                document.getElementById("registerContainer").innerHTML = '';
+                Dann besuch doch einen Kurs von uns! Wir bieten Programmierkurse für FINTA*s (Female, Inter, Trans, Agender, non-binary) an, für die du kein Vorwissen brauchst!<br><br>\
+                Unser Projekt wird von der Bürgerschule Hannover gefördert.";
+                var elem = document.createElement("img");
+                elem.setAttribute("src", "img/BueSchuWeiß_auf_nichts.png");
+                elem.setAttribute("display", "block");
+                elem.setAttribute("margin-left", "auto");
+                elem.setAttribute("margin-right", "auto");
+                elem.setAttribute("height", "160");
+                elem.setAttribute("width", "50%"); //330
+                document.getElementById("registerContainer").innerHTML = "";
+                document.getElementById("registerContainer").appendChild(elem);
         }
 
         function setDatesText(){
@@ -49,7 +58,13 @@
         function setRegistrationText(){
             document.getElementById("headText").innerHTML = "Anmeldung";
             document.getElementById("paragraphText").innerHTML = "Hier kannst du deine Anmeldung an uns (<a href=mailto:anmeldung@unicornsco.de>anmeldung@unicornsco.de</a>) für die Kurse abschicken.";
-            document.getElementById("registerContainer").innerHTML = '<object class="registerObject" data="test.html" ></object>';
+            document.getElementById("registerContainer").innerHTML = '<object class="registerObject" data="form.html" ></object>';
+        }
+
+        function setImprintText(){
+            document.getElementById("headText").innerHTML = "Impressum";
+            document.getElementById("paragraphText").innerHTML = "Hier ist das Impressum bla.";
+            document.getElementById("registerContainer").innerHTML = '';
         }
 
     </script>
@@ -75,6 +90,9 @@
                 <!--<li class="pure-menu-item"><a href="#register" onclick="setRegistrationText()" class="pure-menu-link">Anmeldung</a></li>-->
                 <li class="pure-menu-item"><a href="#about" onclick="setAboutText()" class="pure-menu-link">Über uns</a></li>
                 <li class="pure-menu-item"><a href="#contact" onclick="setContactText()" class="pure-menu-link">Kontakt</a></li>
+
+                 <li class="pure-menu-item"><a href="#imprint" onclick="setImprintText()" class="pure-menu-link">Impressum</a></li>
+
                 <!--<li class="pure-menu-item"><a href="test.html"class="pure-menu-link">Test</a></li>
                 <li class="pure-menu-item"><a href="#test" target="iframeRegister" class="pure-menu-link">Test</a></li>-->
                 

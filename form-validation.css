@@ -1,3 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body{
+	color: #f2f2f2;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 20px;
+}
+
 h1 {
 margin-left: 70px;
 }
@@ -6,14 +14,15 @@ list-style: none;
 margin-bottom: 5px;
 }
 
+
 form ul li label{
 float: left;
 clear: left;
-width: 100px;
+width: 250px;
 text-align: right;
 margin-right: 10px;
-font-family:Verdana, Arial, Helvetica, sans-serif;
-font-size:14px;
+/*font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;*/
 }
 
 form ul li input, select, span {
@@ -27,9 +36,6 @@ width: 320px;
 height: 100px;
 }
 
-radio-inline input[type=radio]{
-	position:absolute;margin-top:4px\9;margin-left:-20px
-}
 
 [type="submit"] {
 clear: left;
