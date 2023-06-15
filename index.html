@@ -13,25 +13,27 @@
     function setLandingText(){
             document.getElementById("headText").innerHTML = "Willkommen bei den Unicorns!";
             document.getElementById("paragraphText").innerHTML = " Du willst programmieren lernen? Hast Lust, dein eigenes Spiel zu entwickeln?<br><br>\
-                Dann besuch doch einen Kurs von uns! Wir bieten Programmierkurse für FINTA*s (Mädchen, Inter, Trans, Agender, non-binary) an, für die du kein Vorwissen brauchst!<br><br>\
-                Unser Projekt wird von der Bürgerschule Hannover gefördert.";
+                Wir bieten Programmierkurse für MINTA* (Mädchen, Inter, Non-Binär, Trans- und Agender) an, für die du kein Vorwissen brauchst!<br><br>\
+                Unsere Projekte  finden in Kooperation mit der Bürgerschule Stadtteilzentrum Nordstadt und dem Chaos Computer Club Hannover statt.<br><br>\
+                Der im Sommer startende wöchentliche Kurs wird von der Bürgerstiftung Hannover gefördert.";
                 var elem = document.createElement("img");
                 elem.setAttribute("src", "img/BueSchuWeiß_auf_nichts.png");
                 elem.setAttribute("display", "block");
                 elem.setAttribute("margin-left", "auto");
                 elem.setAttribute("margin-right", "auto");
-                elem.setAttribute("height", "160");
-                elem.setAttribute("width", "50%"); //330
+                elem.setAttribute("height", "20%");
+                elem.setAttribute("width", "20%"); //330
                 document.getElementById("registerContainer").innerHTML = "";
                 document.getElementById("registerContainer").appendChild(elem);
         }
 
         function setDatesText(){
-            document.getElementById("headText").innerHTML = "Termine";
+            document.getElementById("headText").innerHTML = "Programm";
             document.getElementById("paragraphText").innerHTML = "Vom 14.-16.07.2023 findet der <a href=https://hackover.de/> Hackover</a> beim Chaos Computer Club in Hannover statt. Dort gibt es allerlei zu entdecken und erleben. Kommt vorbei, wir werden dort etwas über die Unicorns erzählen!<br><br>\
             Wir starten nach den Sommerferien mit unseren AGs für absolute Einsteiger*innen!<br><br>\
             \
-            Die AG findet in der Bürgerschule Stadtteilzentrum Nordstadt statt. Ihr könnt dazu euren eigenen Laptop mitbringen oder euch von uns einen leihen. Der Kurs ist kostenlos!<br><br>\
+            Die AG startet am 28.08.2023 und findet immer Montags von 17.30- 19.00 Uhr in der Bürgerschule Stadtteilzentrum Nordstadt statt (in den Ferien findet keine AG statt). Der Kurs richtet sich an absolute Anfänger*innen, falls du schonmal etwas programmiert hast,  wirst du dich in diesem Kurs vermutlich langweilen. <br><br>\
+            Ihr könnt dazu euren eigenen Laptop mitbringen oder euch von uns einen leihen. Der Kurs ist kostenlos!<br><br>\
             <br>\
             Schau im Abschnitt Anmeldung nach.";
             document.getElementById("registerContainer").innerHTML = '';
@@ -85,7 +87,7 @@
 
             <ul class="pure-menu-list">
                 <li class="pure-menu-item"><a href="#home" onclick="setLandingText()" class="pure-menu-link">Willkommen</a></li>
-                <li class="pure-menu-item"><a href="#dates" onclick="setDatesText()" class="pure-menu-link">Termine</a></li>
+                <li class="pure-menu-item"><a href="#dates" onclick="setDatesText()" class="pure-menu-link">Programm</a></li>
                 <li class="pure-menu-item"><a href="#register" onclick="setRegistrationText()" class="pure-menu-link">Anmeldung</a></li>
                 <!--<li class="pure-menu-item"><a href="#register" onclick="setRegistrationText()" class="pure-menu-link">Anmeldung</a></li>-->
                 <li class="pure-menu-item"><a href="#about" onclick="setAboutText()" class="pure-menu-link">Über uns</a></li>
