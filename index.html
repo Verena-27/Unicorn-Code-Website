@@ -23,8 +23,31 @@
                 elem.setAttribute("margin-right", "auto");
                 elem.setAttribute("height", "20%");
                 elem.setAttribute("width", "20%"); //330
+                //elem.border = "20px";
+                elem.style.borderColor = "transparent";
+                
+                elem.onclick = function() {
+                    window.location.href = 'https://www.stadtteil-zentrum-nordstadt.de/';
+                };
+
+                var elem2 = document.createElement("img");
+                elem2.setAttribute("src", "img/Logos/Bürgerstiftung/Bürgerstiftung_Logo_Weiss.png");
+                elem2.setAttribute("display", "block");
+                elem2.setAttribute("margin-left", "auto");
+                elem2.setAttribute("margin-right", "auto");
+                elem2.setAttribute("height", "10%");
+                elem2.setAttribute("width", "10%");
+                //elem2.border = "20px";
+                elem2.style.borderColor = "transparent";
+
+                elem2.onclick = function() {
+                    window.location.href = 'https://buergerstiftung-hannover.de/startseite#';
+                };
+
+
                 document.getElementById("registerContainer").innerHTML = "";
                 document.getElementById("registerContainer").appendChild(elem);
+                document.getElementById("registerContainer").appendChild(elem2);
         }
 
         function setDatesText(){
