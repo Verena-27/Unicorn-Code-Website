@@ -6,7 +6,7 @@ function formValidation(){
 	var gender = document.registration.gender;
 	var email = document.registration.email;
 	var laptop = document.registration.laptop;
-	var interest = document.registration.desc;
+	var interest = document.registration.descr;
 	var note = document.registration.note;
 
 	const linebreak = `%0D%0A`;
