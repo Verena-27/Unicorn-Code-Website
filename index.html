@@ -23,6 +23,7 @@
                 elem.setAttribute("margin-right", "auto");
                 elem.setAttribute("height", "40%");
                 elem.setAttribute("width", "40%"); //330
+                elem.setAttribute("cursor", "pointer");
                 //elem.border = "20px";
                 elem.style.borderColor = "transparent";
                 
@@ -37,6 +38,7 @@
                 elem2.setAttribute("margin-right", "auto");
                 elem2.setAttribute("height", "20%");
                 elem2.setAttribute("width", "20%");
+                elem2.setAttribute("cursor", "pointer");
                 //elem2.border = "20px";
                 elem2.style.borderColor = "transparent";
 
@@ -76,8 +78,20 @@
 
         function setContactText(){
             document.getElementById("headText").innerHTML = "Kontakt";
-            document.getElementById("paragraphText").innerHTML = "Ihr könnt uns allgemein per Mail unter <a href=mailto:info@unicornsco.de> info@unicornsco.de</a> erreichen. <br>Unsere Kurse finden jeweils hier statt: <p>Chaos Computer Club Hannover e.V.<br>Stadtteilzentrum Nordstadt Bürgerschule e.V.<br> Klaus-Müller-Kilian-Weg 2 <br> 30167 Hannover<br><br>Copyright &copy unicornscode";
+            document.getElementById("paragraphText").innerHTML = "Ihr könnt uns allgemein per Mail unter <a href=mailto:info@unicornsco.de> info@unicornsco.de</a> erreichen. <br>Unsere Kurse finden jeweils hier statt: <p>Chaos Computer Club Hannover e.V.<br>Stadtteilzentrum Nordstadt Bürgerschule e.V.<br> Klaus-Müller-Kilian-Weg 2 <br> 30167 Hannover<br><br>Copyright &copy unicornscode<br><br> Besuche uns auch auf Instagram!";
             document.getElementById("registerContainer").innerHTML = '';
+            var insta = document.createElement("img");
+            insta.setAttribute("src", "img/instagram.png");
+            insta.setAttribute("height", "8%");
+            insta.setAttribute("width", "8%");
+            insta.setAttribute("cursor", "pointer !important");
+
+            insta.onclick = function() {
+                window.location.href = 'https://instagram.com/unicornscode.hannover?igshid=MzRlODBiNWFlZA==/';
+            };
+
+            document.getElementById("registerContainer").appendChild(insta);
+
         }
 
         function setRegistrationText(){

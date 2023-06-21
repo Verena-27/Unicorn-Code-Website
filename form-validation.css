@@ -40,7 +40,7 @@ form textarea {
 [type="submit"] {
 	clear: left;
 	/*margin: 20px 0 0 230px;*/
-	text-align: right;
+	text-align: right; /*???*/
 	font-size:18px
 }
 

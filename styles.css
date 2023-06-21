@@ -155,6 +155,10 @@ The content `<div>` is where all your content goes.
     font-weight: 300;
 }
 
+ #registerContainer{
+}
+
+
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
@@ -253,7 +257,7 @@ small screens.
 }
 
     .menu-link:hover,
-    .menu-link:focus {
+    .menu-link:focus {               
         background: #000;
     }
 
@@ -314,9 +318,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         left: 150px;
     }
 
-    #registerContainer{
-    }
-
+   
 }
 
 @media (max-width: 48em) {
