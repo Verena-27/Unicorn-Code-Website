@@ -62,6 +62,7 @@ The content `<div>` is where all your content goes.
 
 .font{
   width: 360px;
+  margin-top: 6%;
 }
 
 .header-container{
@@ -70,7 +71,7 @@ The content `<div>` is where all your content goes.
 }
 
 .flex-container-top{
-    height: 6em;
+    height: 7em;
     display: flex; 
   align-items: center;
   justify-content: space-evenly;
@@ -78,9 +79,10 @@ The content `<div>` is where all your content goes.
 
 .logo1{ /*plain logo in the middle*/
   position: relative;
-  width: 10%;
-  height: 10%;
-  margin-top: -3%;
+  width: 96px; /*8% of width and height*/
+  height: 92px;
+  margin-left: 60%;
+  margin-top: -62%;
   animation-iteration-count: infinite;
   animation-name: animation1;
   animation-duration: 15s;
@@ -96,10 +98,8 @@ The content `<div>` is where all your content goes.
 
 .logo2{ /*scroll from left to right end*/
   position: relative;
-  width: 50%;
-  height: 50%;
-  margin-top: -3%;
-  top: 2.5em;
+  width: 96px;
+  height: 92px;
   animation-iteration-count: infinite;
   animation-name: animation2;
   animation-duration: 15s;
@@ -135,7 +135,7 @@ The content `<div>` is where all your content goes.
      overflow: hidden;
      width: 100%;
      text-align: center;
-     padding-top: 2.5em;
+     padding-top: 3em;
      border-bottom: 4px solid #e203d3;
  }
     /*.header h1 {
