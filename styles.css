@@ -78,8 +78,8 @@ The content `<div>` is where all your content goes.
 
 .logo1{ /*plain logo in the middle*/
   position: relative;
-  width: 240px;
-  height: 80px;
+  width: 10%;
+  height: 10%;
   margin-top: -3%;
   animation-iteration-count: infinite;
   animation-name: animation1;
@@ -96,8 +96,8 @@ The content `<div>` is where all your content goes.
 
 .logo2{ /*scroll from left to right end*/
   position: relative;
-  width: 240px;
-  height: 80px;
+  width: 50%;
+  height: 50%;
   margin-top: -3%;
   top: 2.5em;
   animation-iteration-count: infinite;
