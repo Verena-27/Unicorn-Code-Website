@@ -15,13 +15,17 @@
 			<li><label for="age">Alter:</label></li>
 			<li><input type="text" name="age"/></li>
 
-			<li><label for="gender">Geschlecht:</label></li>
-			<li><select name="gender">
+			<li><label for="gender">Identifizierst du dich als MINTA*?</label></li>
+			<li><input type="radio" name="genderRadio" value="Ja" /><span>Ja</span></li>
+			<li><input type="radio" name="genderRadio" value="Nein" /><span>Nein</span></li>
+			<li><input type="radio" name="genderRadio" id="genderDefault" value="KA" /><span>Keine Angabe</span></li>
+
+			<!--<li><select name="gender">
 				<option selected="" value="Default">(Bitte wähle aus)</option>
 				<option value="weiblich">weiblich</option>
 				<option value="maennlich">männlich</option>
 				<option value="divers">divers</option>
-			</select></li>
+			</select></li>-->
 
 			<li><label for="email">Email:</label></li>
 			<li><input type="text" name="email"/></li>
@@ -32,7 +36,7 @@
 			<li><label id="laptop">Hast du einen eigenen Laptop?</label></li> 
 			<li><input type="radio" name="laptop" value="Ja" /><span>Ja</span></li>
 			<li><input type="radio" name="laptop" value="Nein" /><span>Nein</span></li>
-			<li><input type="radio" name="laptop" id="ka" value="KA" /><span>Keine Angabe</span></li>
+			<li><input type="radio" name="laptop" id="laptopDefault" value="KA" /><span>Keine Angabe</span></li>
 
 			<li><label for="desc">Interesse an folgenden Angeboten:</label></li>
 			<li><textarea name="descr" id="inter"></textarea></li>
@@ -43,8 +47,10 @@
 			<li><input type="submit" name="submit" value="Email senden" /></li>
 		</ul>
 		<script>
-		    let radBtnDefault = document.getElementById("ka");
-		    radBtnDefault.checked = true;
+		    let genderBtnDefault = document.getElementById("genderDefault");
+		    genderBtnDefault.checked = true;
+		    let laptopBtnDefault = document.getElementById("laptopDefault");
+		    laptopBtnDefault.checked = true;
 	   </script>
 	</form>
 </body>

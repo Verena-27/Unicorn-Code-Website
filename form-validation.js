@@ -3,7 +3,7 @@ function formValidation(){
 
 	var name = document.registration.name;
 	var age = document.registration.age;
-	var gender = document.registration.gender;
+	var gender = document.registration.genderRadio;
 	var email = document.registration.email;
 	var laptop = document.registration.laptop;
 	var interest = document.registration.descr;
@@ -13,7 +13,7 @@ function formValidation(){
 	var subj = `${name.value} Anmeldung Unicorns`;
 	var mailbody = `Name: ${name.value}${linebreak}
 	Alter: ${age.value}${linebreak}
-	Geschlecht: ${gender.value}${linebreak}
+	Identifikation als MINTA*: ${gender.value}${linebreak}
 	Email: ${email.value}${linebreak}
 	Laptop: ${laptop.value}${linebreak}
 	Interesse an: ${interest.value}${linebreak}
