@@ -54,6 +54,9 @@ The content `<div>` is where all your content goes.
     line-height: 1.6em;
 }
 
+.content a {
+    color: #ff5b6f;
+}
 
 .registerObject{
     width:100%;
