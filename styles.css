@@ -335,3 +335,37 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 
 
 }
+
+.content a:link {
+  color: rgba(226, 3, 211,0.3);
+}
+
+.content a:visited {
+  color: rgba(0,0,0,0.3);
+}
+
+.content a:hover {
+  color: rgba(255,255,255,0.6);
+}
+
+.content a:active {
+  color: rgba(255,255,255,0.6);
+}
+
+.content a {
+    text-decoration: none;
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}
