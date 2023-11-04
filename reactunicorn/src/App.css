@@ -12,8 +12,38 @@
 .Sidebar{
   height: 100%;
   width: 300px;
-  background-color: black;
+  background-color: purple;
 }
+
+.SidebarList{
+  height:auto;
+  padding:0;
+  width:100%;
+}
+
+.row{
+  width:100%;
+  height:70px;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS';
+}
+
+.row:hover{
+  cursor: pointer;
+  background-color: darkmagenta;
+}
+
+.SidebarList#active{
+  background-color: darkmagenta;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
