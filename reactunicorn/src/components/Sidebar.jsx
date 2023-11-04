@@ -1,8 +1,11 @@
 
 import '../App.css';
 import React from "react";
+import { NavLink } from 'react-router-dom';
 import { SideBarData } from './SideBarData';
 
+//id={window.location.pathname == val.link ? "active": ""}
+//onClick={() => {window.location.pathname = val.link}}
 function Sidebar(){
     return(
         <div className="Sidebar">
@@ -11,10 +14,8 @@ function Sidebar(){
                     return(
                         <li 
                         key={key} 
-                        className="row" 
-                        id={window.location.pathname == val.link ? "active": ""}
-                        onClick={() => {window.location.pathname = val.link}}>
-                            <div>{val.title}</div>
+                        className="row" >
+                            <NavLink to={val.link}>{val.title}</NavLink>
                         </li>
                     )
                 })}

@@ -1,7 +1,17 @@
 .App {
   width:100vw;
   height:100vh;
+  padding:0;
   background-color: grey;
+}
+
+.grid-container{
+  display:grid;
+  gap: 5%;
+  grid-template-areas: 
+  'header header header header header header'
+  'menu main main main main main'
+  'menu footer footer footer footer footer';
 }
 
 .App-logo {
@@ -10,9 +20,8 @@
 }
 
 .Sidebar{
-  height: 100%;
-  width: 300px;
   background-color: purple;
+  grid-area: menu;
 }
 
 .SidebarList{
@@ -42,6 +51,18 @@
 .SidebarList#active{
   background-color: darkmagenta;
 }
+
+.home{
+  float:right;
+  width:70%;
+  grid-area: main;
+}
+
+.header{
+  grid-area:header;
+  height: 10%;
+}
+
 
 
 
