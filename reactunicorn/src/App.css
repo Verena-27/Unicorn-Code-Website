@@ -60,7 +60,19 @@
 
 .header{
   grid-area:header;
-  height: 10%;
+}
+
+.flex-container-top{
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.animation-container{
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute;
 }
 
 

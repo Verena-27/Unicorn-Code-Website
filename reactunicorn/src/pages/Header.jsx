@@ -3,8 +3,11 @@ import React from "react";
 function Header(){
     return(
         <div className="header">
-            Header
-            
+            <div className="flex-container-top">
+                <div className="animation-container">
+                    <img src={require("../img/fontonly.png")} alt="UnicornFont"></img>
+                </div>
+            </div>
         </div>
     );
 }
