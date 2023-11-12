@@ -5,9 +5,21 @@ function Header(){
         <div className="header">
             <div className="flex-container-top">
                 <div className="animation-container">
-                    <img src={require("../img/fontonly.png")} alt="UnicornFont"></img>
+                    <div className="header-container">
+                        <img className="logo2" src={require("../img/unicornonly.png")} alt="UnicornsLogo"></img>
+                    </div>
                 </div>
+
+                <div className="header-container">
+                    <img className="logo1" src={require("../img/unicornonly.png")} alt="UnicornsLogo"></img>
+                </div>
+                <div className="header-container">
+                    <img class="font" src={require("../img/fontonly.png")} alt="UnicornsFont"></img>
+
+                </div>
+                
             </div>
+            
         </div>
     );
 }

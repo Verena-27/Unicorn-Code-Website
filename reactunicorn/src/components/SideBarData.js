@@ -14,7 +14,7 @@ export const SideBarData = [
     },
     {
         title: "Über uns",
-        link: "/about us"
+        link: "/aboutus"
     },
     {
         title: "Dateien",
