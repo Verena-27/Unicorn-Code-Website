@@ -5,7 +5,7 @@ export const SideBarData = [
         link: "/home"
     },
     {
-        title: "Termine",
+        title: "Programm",
         link: "/dates"
     },
     {

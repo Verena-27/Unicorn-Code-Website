@@ -1,11 +1,12 @@
 import './App.css';
 import Sidebar from './components/Sidebar';
-import { Routes, Route, BrowserRouter} from 'react-router-dom';
+import { Routes, Route, BrowserRouter, Navigate} from 'react-router-dom';
 import Home from './pages/Home';
 import Header from './pages/Header';
 import Register from './pages/Register';
 import Files from './pages/Files';
 import Dates from './pages/Dates';
+import About from './pages/About';
 
 function App() {
   return (
@@ -16,9 +17,11 @@ function App() {
           <Sidebar></Sidebar>
           <Header></Header>
           <Routes>
+            <Route path="/" element={<Navigate replace to="/home" />} />
             <Route path="/home" element={<Home></Home>}></Route>
             <Route path="/dates" element={<Dates></Dates>}></Route>
             <Route path="/register" element={<Register></Register>}></Route>
+            <Route path="/aboutus" element={<About></About>}></Route>
             <Route path="/files" element={<Files></Files>}></Route>
           </Routes>
 
