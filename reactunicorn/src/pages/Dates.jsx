@@ -8,7 +8,7 @@ function Dates(){
         <div className='content'>
             <h2>Programm</h2>
             Am 25.04.2024 ist Girl's Day! Und wir sind dabei, du auch?
-            <Accordion  className="accordion" defaultActiveKey="1">
+            <Accordion data-bs-theme="dark" className="accordion" defaultActiveKey="1">
                 <Accordion.Item eventKey="girlsday">
                     <Accordion.Header>Girl's Day 2024</Accordion.Header>
                     <Accordion.Body>
@@ -25,7 +25,7 @@ function Dates(){
         Du brauchst für den Kurs absolut keine Vorkenntnisse. Falls du bisher noch nichts mit Informatik zu tun hattest, kannst du hier raus finden, ob es überhaupt etwas für dich ist.
         Wir haben keinen festen Stundenplan für den Kurs und richten uns nach dir, was dich interessiert und was du lernen möchtest! Bei uns brauchst du keine Angst haben, Fragen zu stellen oder Fehler zu machen.
         Du kannst gerne deinen eigenen Laptop mitbringen oder dir von uns einen leihen. 
-        <Accordion className='accordion'>
+        <Accordion data-bs-theme="dark" className='accordion'>
             <Accordion.Item eventKey="course">
                 <Accordion.Header>Laufender Kurs montags 17.30-19.00 Uhr</Accordion.Header>
                 <Accordion.Body>
@@ -40,7 +40,7 @@ function Dates(){
 
         <br/>Vergangene Veranstaltungen<br/>
 
-        <Accordion  className="accordion">
+        <Accordion data-bs-theme="dark" className="accordion">
             <Accordion.Item eventKey='network23'>
                 <Accordion.Header>Networking</Accordion.Header>
                 <Accordion.Body>FINTA* Informatik Erstis</Accordion.Body>

@@ -11,18 +11,13 @@ function Register(){
     return(
         <div className="content register">
         <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group controlId="formBasicName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control/>
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Alter</Form.Label>
-                <Form.Control/>
-            </Form.Group>
-
             <Form.Group as={Row} className="mb-3">
-            <Form.Label as="legend" column sm={2}>
+            <Form.Label as="legend" column sm={12}>
                 Identifizierst du dich als MINTA*?
             </Form.Label>
             <Col sm={10}>
@@ -47,15 +42,20 @@ function Register(){
           </Col>
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Group controlId="formBasicAge">
+                <Form.Label>Alter</Form.Label>
+                <Form.Control/>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email"/>
             </Form.Group>
 
             <Form.Group className="mb-3">
-            <Form.Label as="legend" column sm={2}>
-                Hast du einen eigenen Laptop?
-            </Form.Label>
+              <Form.Label as="legend" column sm={10}>
+                  Hast du einen eigenen Laptop?
+              </Form.Label>
             <Col sm={10}>
                 <Form.Check
                 type="radio"
