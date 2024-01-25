@@ -78,34 +78,68 @@
             document.getElementById("registerContainer").innerHTML = '';
         }*/
 
-        function setAboutText(){
+        function setAboutText() {
             document.getElementById("headText").innerHTML = "Über uns";
-            document.getElementById("paragraphText").innerHTML = "Wir sind eine Gruppe von  Informatiker*innen, die in Zusammenarbeit mit dem Chaos Computer Club Hannover junge MINTA*s (Mädchen, Inter, Non-Binär, Trans- und Agender) für das Programmieren begeistern wollen.<br><br>Da wir selber als FINTA* im Informatikstudium unterrepräsentiert sind, möchten wir mehr Diversität in die Informatik bringen! Mit unseren Kursen senken wir die Hürde um sich mit Computern auseinander zu setzen. Hier kann man alle Fragen stellen und braucht keine Angst vor Neuem haben.<br><br> Wir bieten wöchentliche Kurstreffen an, dort nehmen wir uns mit einer fortlaufenden Gruppe ein größeres Projekt vor und programmieren das zusammen. Hier entsteht am Ende des Kurses meistens ein kleines Spiel. Ein Einstieg ist jederzeit möglich.<br> Die aktuellen Termine findet ihr unter dem Abschnitt Programm.<br><br> Alle unsere Angebote richten sich an MINTA*s zwischen 13 und 16 Jahren ohne Vorkenntnisse. <br>Laptops können selber mitgebracht werden, falls keiner vorhanden ist, stellen wir euch gerne einen zur Verfügung. Alle Kurse sind kostenlos!<br><br> Bei Fragen schreibt uns gerne an <a href=mailto:info@unicornsco.de> info@unicornsco.de</a>, wir freuen uns auf euch :)";
+
+            // Email for general inquiries
+            var generalInquiryUser = "info";
+            var generalInquiryDomain = "unicornsco.de";
+            var generalInquiryEmail = generalInquiryUser + "@" + generalInquiryDomain;
+
+            document.getElementById("paragraphText").innerHTML = "Wir sind eine Gruppe von  Informatiker*innen, die in Zusammenarbeit mit dem Chaos Computer Club Hannover junge MINTA*s (Mädchen, Inter, Non-Binär, Trans- und Agender) für das Programmieren begeistern wollen.<br><br>Da wir selber als FINTA* im Informatikstudium unterrepräsentiert sind, möchten wir mehr Diversität in die Informatik bringen! Mit unseren Kursen senken wir die Hürde um sich mit Computern auseinander zu setzen. Hier kann man alle Fragen stellen und braucht keine Angst vor Neuem haben.<br><br> Wir bieten wöchentliche Kurstreffen an, dort nehmen wir uns mit einer fortlaufenden Gruppe ein größeres Projekt vor und programmieren das zusammen. Hier entsteht am Ende des Kurses meistens ein kleines Spiel. Ein Einstieg ist jederzeit möglich.<br> Die aktuellen Termine findet ihr unter dem Abschnitt Programm.<br><br> Alle unsere Angebote richten sich an MINTA*s zwischen 13 und 16 Jahren ohne Vorkenntnisse. <br>Laptops können selber mitgebracht werden, falls keiner vorhanden ist, stellen wir euch gerne einen zur Verfügung. Alle Kurse sind kostenlos!<br><br> Bei Fragen schreibt uns gerne an <a href=\"mailto:" + generalInquiryEmail + "\">" + generalInquiryEmail + "</a>, wir freuen uns auf euch :)";
+            
             document.getElementById("registerContainer").innerHTML = '';
         }
 
+
         function setContactText(){
             document.getElementById("headText").innerHTML = "Kontakt";
-            document.getElementById("paragraphText").innerHTML = "Ihr könnt uns allgemein per Mail unter <a href=mailto:info@unicornsco.de> info@unicornsco.de</a> erreichen. <br>Unsere Kurse finden jeweils hier statt: <p>Chaos Computer Club Hannover e.V.<br>Stadtteilzentrum Nordstadt Bürgerschule e.V.<br> Klaus-Müller-Kilian-Weg 2 <br> 30167 Hannover<br><br>Copyright &copy UnicornsCode<br><br> Besuche uns auch auf Instagram!";
+            
+            // Email parts
+            var user = "info";
+            var domain = "unicornsco.de";
+            var email = user + "@" + domain;
+
+            // Create a mailto link with the concatenated email
+            var emailLink = '<a href="mailto:' + email + '">' + email + '</a>';
+
+            document.getElementById("paragraphText").innerHTML = "Ihr könnt uns allgemein per Mail unter " + emailLink + " erreichen. <br>Unsere Kurse finden jeweils hier statt: <p>Chaos Computer Club Hannover e.V.<br>Stadtteilzentrum Nordstadt Bürgerschule e.V.<br> Klaus-Müller-Kilian-Weg 2 <br> 30167 Hannover<br><br>Copyright &copy UnicornsCode<br><br> Besuche uns auch auf Instagram!";
+            
             document.getElementById("registerContainer").innerHTML = '';
+
+            // Create Instagram image element
             var insta = document.createElement("img");
             insta.setAttribute("src", "img/instagram.png");
             insta.setAttribute("height", "8%");
             insta.setAttribute("width", "8%");
             insta.setAttribute("cursor", "pointer !important");
 
-            insta.onclick = function() {
+            // Instagram link redirection
+            insta.onclick = function () {
                 window.location.href = 'https://instagram.com/unicornscode.hannover?igshid=MzRlODBiNWFlZA==/';
             };
 
+            // Append Instagram image to registerContainer
             document.getElementById("registerContainer").appendChild(insta);
-
         }
 
         function setRegistrationText(){
             document.getElementById("headText").innerHTML = "Anmeldung";
-            document.getElementById("paragraphText").innerHTML = "Hier kannst du deine Anmeldung an uns (<a href=mailto:anmeldung@unicornsco.de>anmeldung@unicornsco.de</a>) für die Kurse abschicken. Falls es Probleme mit dem Formular oder der E-mail gibt, schreibe deine Nachricht an <a href=mailto:tatjana@unicornsco.de>tatjana@unicornsco.de</a>. Bitte beachte, dass sich unsere Angebote an MINTA* von 13-16 Jahren richten.";
-            document.getElementById("registerContainer").innerHTML = '<object class="registerObject" data="form.html" ></object>';
+
+            // Email for general inquiries
+            var generalInquiryUser = "anmeldung";
+            var generalInquiryDomain = "unicornsco.de";
+            var generalInquiryEmail = generalInquiryUser + "@" + generalInquiryDomain;
+
+            // Email for form or email-related issues
+            var issuesUser = "tatjana";
+            var issuesDomain = "unicornsco.de";
+            var issuesEmail = issuesUser + "@" + issuesDomain;
+
+            document.getElementById("paragraphText").innerHTML = "Hier kannst du deine Anmeldung an uns (<a href=\"mailto:" + generalInquiryEmail + "\">" + generalInquiryEmail + "</a>) für die Kurse abschicken. Falls es Probleme mit dem Formular oder der E-mail gibt, schreibe deine Nachricht an <a href=\"mailto:" + issuesEmail + "\">" + issuesEmail + "</a>. Bitte beachte, dass sich unsere Angebote an MINTA* von 13-16 Jahren richten.";
+
+            document.getElementById("registerContainer").innerHTML = '<object class="registerObject" data="form.html"></object>';
+
         }
 
         /*function setImprintText(){
