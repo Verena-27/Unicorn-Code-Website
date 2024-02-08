@@ -14,6 +14,10 @@
   width:80%;
 }
 
+.register{
+  max-width: 1000px;
+  text-align: center;
+}
 
 .grid-container{
   display:grid;
@@ -37,7 +41,7 @@
 
 .content{
   padding:20px;
-  text-align: center;
+  text-align: left;
 }
 .content a:link {
   color: rgba(226, 3, 211,0.3);
