@@ -21,6 +21,10 @@ export const SideBarData = [
         link: "/files"
     },
     {
+        title: "Aufgaben",
+        link: "/exercises"
+    },
+    {
         title: "Kontakt",
         link: "/contact"
     }

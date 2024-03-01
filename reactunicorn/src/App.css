@@ -35,6 +35,24 @@
   'menu main';
 }
 
+.exerciseList{
+  max-height: 700px;
+  max-width: 900px;
+  overflow: auto;
+}
+
+.tagList{
+  max-height: 700px;
+  max-width: 300px;
+  overflow: auto;
+}
+
+.table-container thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .SidebarList.row.a{
   color:darkmagenta;
 }

@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Register(){
 
-<<<<<<< HEAD
 
     
   // Email for general inquiries
@@ -53,19 +52,6 @@ function Register(){
           <Col sm={10}>
             <Form.Label as="legend">
               Identifizierst du dich als MINTA*?
-=======
-    return(
-        <div className="content register">
-        <Form>
-            <Form.Group controlId="formBasicName">
-                <Form.Label>Name</Form.Label>
-                <Form.Control/>
-            </Form.Group>
-
-            <Form.Group as={Row} className="mb-3">
-            <Form.Label as="legend" column sm={12}>
-                Identifizierst du dich als MINTA*?
->>>>>>> origin/react
             </Form.Label>
             <Form.Check
               inline
@@ -91,7 +77,6 @@ function Register(){
           </Col>
         </Form.Group>
 
-<<<<<<< HEAD
         <Form.Group as={Row} className="mb-3" controlId="formBasicEmail">
           <Form.Label column sm={2}>
             Email
@@ -107,29 +92,6 @@ function Register(){
             <Form.Label as="legend">
               Hast du einen eigenen Laptop?
             </Form.Label>
-=======
-            <Form.Group controlId="formBasicAge">
-                <Form.Label>Alter</Form.Label>
-                <Form.Control/>
-            </Form.Group>
-
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email"/>
-            </Form.Group>
-
-            <Form.Group className="mb-3">
-              <Form.Label as="legend" column sm={10}>
-                  Hast du einen eigenen Laptop?
-              </Form.Label>
-            <Col sm={10}>
-                <Form.Check
-                type="radio"
-                label="Ja"
-                name="formHorizontalRadios"
-                id="formHorizontalRadios1"
-                />
->>>>>>> origin/react
             <Form.Check
               inline
               type="radio"

@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Header from './pages/Header';
 import Register from './pages/Register';
 import Files from './pages/Files';
+import Exercises from './pages/Exercises';
 import Dates from './pages/Dates';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -24,6 +25,7 @@ function App() {
             <Route path="/register" element={<Register></Register>}></Route>
             <Route path="/aboutus" element={<About></About>}></Route>
             <Route path="/files" element={<Files></Files>}></Route>
+            <Route path="/exercises" element={<Exercises/>}></Route>
             <Route path="/contact" element={<Contact/>}></Route>
           </Routes>
 
