@@ -14,7 +14,7 @@ function Header(){
                     <img className="logo1" src={require("../img/unicornonly.png")} alt="UnicornsLogo"></img>
                 </div>
                 <div className="header-container">
-                    <img class="font" src={require("../img/fontonly.png")} alt="UnicornsFont"></img>
+                    <img className="font" src={require("../img/fontonly.png")} alt="UnicornsFont"></img>
 
                 </div>
                 

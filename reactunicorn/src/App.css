@@ -44,6 +44,10 @@
   cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
 }
 
+.register{
+  max-width: 1000px;
+  text-align: center;
+}
 
 .grid-container{
   display:grid;
@@ -54,6 +58,24 @@
   grid-template-areas: 
   'menu header'
   'menu main';
+}
+
+.exerciseList{
+  max-height: 700px;
+  max-width: 900px;
+  overflow: auto;
+}
+
+.tagList{
+  max-height: 700px;
+  max-width: 300px;
+  overflow: auto;
+}
+
+.table-container thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .SidebarList.row.a{
@@ -67,7 +89,7 @@
 
 .content{
   padding:20px;
-  text-align: center;
+  text-align: left;
 }
 .content a:link {
   color: rgba(226, 3, 211,0.3);
