@@ -7,6 +7,14 @@ import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Register() {
+
+    const registerEmail = process.env.REACT_APP_REGISTER_EMAIL;
+    const supportEmail = process.env.REACT_APP_SUPPORT_EMAIL;
+    
+    console.log('Register Email:', process.env.REACT_APP_REGISTER_EMAIL);
+    console.log('Support Email:', process.env.REACT_APP_SUPPORT_EMAIL);
+
+
     const [formData, setFormData] = useState({
         name: '',
         minta: '',
@@ -37,16 +45,16 @@ function Register() {
             Bemerkungen: ${formData.comments}
         `;
 
-        const mailtoLink = `mailto:anmeldung@unicornsco.de?subject=Kursanmeldung&body=${encodeURIComponent(emailBody)}`;
+        const mailtoLink = `mailto:${registerEmail}?subject=Kursanmeldung&body=${encodeURIComponent(emailBody)}`;
         window.location.href = mailtoLink;
     };
 
     return (
       <div className="content">
         <p>
-          Hier kannst du deine Anmeldung an uns (<a href="mailto:anmeldung@unicornsco.de">anmeldung@unicornsco.de</a>) für die Kurse abschicken. 
+          Hier kannst du deine Anmeldung an uns (<a href={`mailto:${registerEmail}`}>{registerEmail}</a>) für die Kurse abschicken. 
           Falls es Probleme mit dem Formular oder der E-mail gibt, schreibe deine Nachricht an 
-          <a href="mailto:tatjana@unicornsco.de"> tatjana@unicornsco.de</a>.
+          <a href={`mailto:${supportEmail}`}>{supportEmail}</a>.
         </p>
         <div className="content register">
             <Container>

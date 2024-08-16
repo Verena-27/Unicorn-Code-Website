@@ -4,11 +4,9 @@ import React from "react";
 
 function About(){
 
+    const infoEmail = process.env.REACT_APP_INFO_EMAIL;
+    console.log("Test", process.env.REACT_APP_TEST);
 
-    // Email for general inquiries
-    var generalInquiryUser = "info";
-    var generalInquiryDomain = "unicornsco.de";
-    var generalInquiryEmail = generalInquiryUser + "@" + generalInquiryDomain;
     return(
         <div className="content">
             <h2 className="heading">Über uns</h2>
@@ -24,7 +22,7 @@ function About(){
                 Alle unsere Angebote richten sich an MINTA*s ab 13 Jahren ohne Vorkenntnisse. Aktuell ist der Kurs ebenso für Erwachsene geöffnet.<br/>
                 Laptops können selber mitgebracht werden, falls keiner vorhanden ist, stellen wir euch gerne einen zur Verfügung. 
                 Alle Kurse sind kostenlos!<br/><br/> Bei Fragen schreibt uns gerne an{' '} 
-                <a href={`mailto:${generalInquiryEmail}`}>{generalInquiryEmail}</a>, wir freuen uns auf euch!
+                <a href={`mailto:${infoEmail}`}>{infoEmail}</a>, wir freuen uns auf euch!
             </p>
         </div>
     );

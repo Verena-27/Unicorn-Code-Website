@@ -152,6 +152,8 @@
   width:150px;
   text-align: center;
   height: auto;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
 }
 
 .SidebarList{
