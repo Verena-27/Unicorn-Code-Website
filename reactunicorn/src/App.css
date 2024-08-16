@@ -10,13 +10,38 @@
   height: 100%;
 }
 
-.accordion{
-  width:80%;
+.accordion {
+  width: 60%; /* Default width on larger screens */
+  margin: 0 auto; /* Center align */
   --bs-accordion-active-color: darkmagenta !important;
-  --bs-accordion-active-bg:black !important;
+  --bs-accordion-active-bg: black !important;
   --bs-border-color: white !important;
- /* --bs-accordion-btn-focus-box-shadow: white !important; does not work*/
-  --bs-accordion-btn-focus-box-shadow:none !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    width: 90%; /* Wider on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion {
+    width: 100%; /* Full width on mobile screens */
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Adjust as needed */
+}
+
+.centered-image {
+  max-width: 30%; /* Ensures the image scales well */
+  height: auto; /* Maintains aspect ratio */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
 }
 
 
@@ -123,13 +148,22 @@
   grid-area: main;
 }
 
-.register{
-  grid-area: main;
-  padding:2%;
-  width:60%;
-  font-size:16px;
+
+
+.content.register {
+  padding: 2rem 0; /* Add some padding on top and bottom */
   text-align: left;
+  font-size: 16px;
 }
+
+@media (min-height: 700px) {
+  .content.register {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}
+
 
 .font{
   width: 360px;
@@ -222,6 +256,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
