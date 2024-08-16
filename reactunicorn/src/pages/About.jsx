@@ -21,7 +21,7 @@ function About(){
                 Wir bieten wöchentliche Kurstreffen an, dort nehmen wir uns mit einer fortlaufenden Gruppe ein größeres Projekt vor und programmieren das zusammen. 
                 Hier entsteht am Ende des Kurses meistens ein kleines Spiel. Ein Einstieg ist jederzeit möglich.<br/>
                 Die aktuellen Termine findet ihr unter dem Abschnitt Programm.<br/><br/> 
-                Alle unsere Angebote richten sich an MINTA*s zwischen 13 und 16 Jahren ohne Vorkenntnisse. <br/>
+                Alle unsere Angebote richten sich an MINTA*s ab 13 Jahren ohne Vorkenntnisse. Aktuell ist der Kurs ebenso für Erwachsene geöffnet.<br/>
                 Laptops können selber mitgebracht werden, falls keiner vorhanden ist, stellen wir euch gerne einen zur Verfügung. 
                 Alle Kurse sind kostenlos!<br/><br/> Bei Fragen schreibt uns gerne an{' '} 
                 <a href={`mailto:${generalInquiryEmail}`}>{generalInquiryEmail}</a>, wir freuen uns auf euch!

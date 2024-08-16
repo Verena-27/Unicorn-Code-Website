@@ -12,16 +12,18 @@
 
 .accordion {
   width: 60%; /* Default width on larger screens */
-  margin: 0 auto; /* Center align */
   --bs-accordion-active-color: darkmagenta !important;
   --bs-accordion-active-bg: black !important;
   --bs-border-color: white !important;
   --bs-accordion-btn-focus-box-shadow: none !important;
 }
-
 @media (max-width: 768px) {
   .accordion {
     width: 90%; /* Wider on smaller screens */
+  }
+  .centered-image {
+    max-width: 60%; /* Adjusted width for smaller screens */
+    min-width: 200px; /* Adjusted minimum width */
   }
 }
 
@@ -29,17 +31,36 @@
   .accordion {
     width: 100%; /* Full width on mobile screens */
   }
+  .centered-image {
+    max-width: 70%; /* Adjusted width for extra small screens */
+    min-width: 180px; /* Adjusted minimum width */
+  }
 }
 
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh; /* Adjust as needed */
+  height: auto; /* Adjusted height to accommodate image */
+}
+
+.image-container-insta {
+  display: flex;
+  height: auto; /* Adjusted height to accommodate image */
 }
 
 .centered-image {
   max-width: 30%; /* Ensures the image scales well */
+  min-width: 200px; /* Ensures the image does not get smaller than 150px */
+  height: auto; /* Maintains aspect ratio */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
+  display: block; /* Center the image horizontally */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.centered-image-insta {
+  max-width: 5%; /* Ensures the image scales well */
+  min-width: 50px; /* Ensures the image does not get smaller than 150px */
   height: auto; /* Maintains aspect ratio */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
 }

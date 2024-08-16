@@ -42,6 +42,12 @@ function Register() {
     };
 
     return (
+      <div className="content">
+        <p>
+          Hier kannst du deine Anmeldung an uns (<a href="mailto:anmeldung@unicornsco.de">anmeldung@unicornsco.de</a>) für die Kurse abschicken. 
+          Falls es Probleme mit dem Formular oder der E-mail gibt, schreibe deine Nachricht an 
+          <a href="mailto:tatjana@unicornsco.de"> tatjana@unicornsco.de</a>.
+        </p>
         <div className="content register">
             <Container>
                 <Row className="justify-content-center">
@@ -173,6 +179,7 @@ function Register() {
                     </Col>
                 </Row>
             </Container>
+        </div>
         </div>
     );
 }
