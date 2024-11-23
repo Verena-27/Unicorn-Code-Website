@@ -109,6 +109,7 @@
 }
 
 .content{
+  margin-left: 250px;
   padding:20px;
   text-align: left;
 }
@@ -313,5 +314,140 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  min-height: 100vh;
+  z-index: 100;
+  /*padding: 48px 0 0;*/
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  background-color: #111; /* Set the sidebar background color */
+  transform: translateX(0); /* Default: visible */
+  transition: transform 0.25s ease-out;
+}
+
+/* Sidebar closed (hidden off-screen for mobile) */
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+/* Sidebar wrapper */
+#sidebar-wrapper {
+min-height: 100vh;
+width: 250px; /* Fixed width for the sidebar */
+margin-left: 0;
+transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+padding: 0.875rem 1.25rem;
+font-size: 1.2rem;
+color: white;
+text-align: center;
+}
+
+/* Page content wrapper */
+#page-content-wrapper {
+min-width: 0;
+width: 100%;
+overflow-x: hidden; /* Prevent horizontal scrolling */
+transition: margin-left 0.25s ease-out;
+}
+
+/* Hamburger menu button */
+.hamburger {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  z-index: 110; /* Ensure it stays above the sidebar */
+  display: none; /* Default: hidden */
+  transition: tranform 0.25s ease-out;
+}
+
+/* Hamburger lines (custom for icon) */
+.hamburger .line {
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hamburger menu open state */
+.hamburger.open .line:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+}
+
+/* Overlay (background dimming when sidebar is open) */
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99; /* Below the hamburger, above the content */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.25s, opacity 0.25s ease-in-out;
+}
 
 
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .hamburger {
+      display: block; /* Show hamburger button on small screens */
+      transition: transform 0.25s ease-out;
+      transform: translateX(0);
+  }
+  .hamburger.open {
+    transform: translateX(200px);
+  }
+
+  #sidebar-wrapper {
+  width: 250px; /* Set sidebar width for small screens */
+  }
+
+  /* Sidebar starts hidden by default on mobile */
+  .sidebar {
+      transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+      transform: translateX(0);
+    
+  }
+  /* Overlay visible when sidebar is open */
+  .overlay.visible {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  }
+  .content {
+  margin-left:0;
+  }
+
+
+}
