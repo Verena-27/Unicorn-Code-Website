@@ -18,6 +18,7 @@ function App() {
         <div className="grid-container">
           <Sidebar></Sidebar>
           <Header></Header>
+          <div className='content'>
           <Routes>
             <Route path="/" element={<Navigate replace to="/home" />} />
             <Route path="/home" element={<Home></Home>}></Route>
@@ -28,7 +29,7 @@ function App() {
             <Route path="/exercises" element={<Exercises/>}></Route>
             <Route path="/contact" element={<Contact/>}></Route>
           </Routes>
-
+          </div>
         </div>
     </div>
     

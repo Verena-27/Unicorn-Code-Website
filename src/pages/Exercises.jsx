@@ -192,7 +192,7 @@ function Exercises(){
 
 
     return(
-        <>
+        <div className="content">
         {/*Table for exercises with tags*/}
         <Row>
           <Col>
@@ -401,7 +401,7 @@ function Exercises(){
 
 
 
-        </>
+        </div>
     );
 }
 

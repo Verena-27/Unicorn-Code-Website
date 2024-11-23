@@ -8,7 +8,7 @@ function About(){
     console.log("Test", process.env.REACT_APP_TEST);
 
     return(
-        <div className="content">
+        <div>
             <h2 className="heading">Über uns</h2>
             <p>
                 Wir sind eine Gruppe von  Informatiker*innen, die in Zusammenarbeit mit dem Chaos Computer Club Hannover junge 

@@ -109,6 +109,7 @@
 }
 
 .content{
+  grid-area: main;
   margin-left: 250px;
   padding:20px;
   text-align: left;
@@ -317,6 +318,7 @@
 /* Sidebar container */
 .sidebar {
   position: fixed;
+  grid-area: menu;
   top: 0;
   bottom: 0;
   left: 0;
@@ -330,10 +332,7 @@
   transition: transform 0.25s ease-out;
 }
 
-/* Sidebar closed (hidden off-screen for mobile) */
-.sidebar.closed {
-  transform: translateX(-100%);
-}
+
 
 /* Sidebar wrapper */
 #sidebar-wrapper {
@@ -448,6 +447,5 @@ transition: margin-left 0.25s ease-out;
   .content {
   margin-left:0;
   }
-
 
 }

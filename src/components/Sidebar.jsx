@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //id={window.location.pathname == val.link ? "active": ""}
 //onClick={() => {window.location.pathname = val.link}}
 function Sidebar(){
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const togglesidebar = () => {
         setIsOpen(!isOpen);
     }
@@ -23,7 +23,7 @@ function Sidebar(){
             <div className='line'></div>
         </button>
             {/* sidebar */}
-            <div className={`sidebar ${isOpen ? "open" : "closed"}`}>
+            <div className={`sidebar ${isOpen ? "open" : ""}`}>
                 <ul className="SidebarList">
                 {SideBarData.map((val, key)=>{
                         return(
