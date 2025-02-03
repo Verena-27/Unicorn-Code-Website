@@ -13,14 +13,14 @@ function formValidation(){
 	var subj = `${name.value} Anmeldung Unicorns`;
 	var mailbody = `Name: ${name.value}${linebreak}
 	Alter: ${age.value}${linebreak}
-	Identifikation als MINTA*: ${gender.value}${linebreak}
+	Identifikation als FINTA*: ${gender.value}${linebreak}
 	Email: ${email.value}${linebreak}
-	Laptop: ${laptop.value}${linebreak}
 	Interesse an: ${interest.value}${linebreak}
 	Bemerkungen: ${note.value}`;
 	window.location.href = `mailto:anmeldung@unicornsco.de?subject=${subj}&body=${mailbody}`;
 	return true;
 	
+	//Laptop: ${laptop.value}${linebreak}
 	
 	/*var name = document.registration.name;
 	var age = document.registration.age;
