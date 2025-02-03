@@ -16,9 +16,9 @@
     <script type="text/javascript">
     function setLandingText(){
             document.getElementById("headText").innerHTML = "Willkommen bei den Unicorns!";
-            document.getElementById("paragraphText").innerHTML = " Du willst programmieren lernen? Hast Lust, dein eigenes Spiel zu entwickeln? Oder willst einfach mal gucken, was Informatik überhaupt ist und ob du dich dafür interessierst?<br><br>\
-                Wir bieten Programmierkurse für MINTA* (Mädchen, Inter, Non-Binär, Trans- und Agender) ab 13 Jahren an, für die du kein Vorwissen brauchst! Der aktuelle Kurs (Start am 24. Oktober 2024) wird für erwachsene FINTA*-Personen geöffnet. Falls du Kinder bis 10 Jahre hast und keine Betreuung findest, kannst du sie gerne zum Kurs mitbringen. Gemeinsam schauen wir uns zunächst Grundlagen an, sodass du selbstsicher mit einem Computer umgehen kannst! Wir treffen uns jeden Donnerstag um 18-19.30.<br><br>\
-                Unsere Projekte  finden in Kooperation mit der Bürgerschule Stadtteilzentrum Nordstadt und dem Chaos Computer Club Hannover statt.<br><br>";
+            document.getElementById("paragraphText").innerHTML = " Du willst wissen, was Informatik ist? Hast Spaß an Technik? Oder willst einfach mal gucken, ob die Welt der Computer etwas für dich ist?<br><br>\
+                Wir sind Anlaufstelle für FINTA* (Frauen und Mädchen, Inter, Non-Binär, Trans- und Agender) im Bereich der Informatik! Hier kannst du dich bei unseren jährlichen Girl's Day Angeboten ausprobieren, andere Studis bei einem unserer Vernetzungstreffen kennenlernen oder eine nette Community finden!<br><br>\
+                Unsere Angebote finden in Kooperation mit der Bürgerschule Stadtteilzentrum Nordstadt und dem Chaos Computer Club Hannover statt.<br><br>";
                 var elem = document.createElement("img");
                 elem.setAttribute("src", "img/BueSchuWeiß_auf_nichts.png");
                 elem.setAttribute("display", "block");
@@ -58,14 +58,9 @@
         function setDatesText(){
             document.getElementById("headText").innerHTML = "Programm";
             document.getElementById("paragraphText").innerHTML = "\
-            Am 17.10.2024 veranstalten wir wieder ein Ersti-Treffen für FINTA*, eingeladen sind ebenso höhere Semester! Ab 18 Uhr im Elchkeller in der Hannover Nordstadt!<br><br>\
-            Der aktuelle Kurs zum Programmieren lernen findet immer donnerstags von 18-19.30 Uhr in der Bürgerschule Stadtteilzentrum Nordstadt statt (in den Ferien findet kein Kurs statt). Du kannst jederzeit anfangen mitzumachen (der Kurs fängt am 24. Oktober 2024 an)!<br><br>\
-            Der Kurs richtet sich an absolute Anfänger*innen. Falls du schonmal etwas programmiert hast, wirst du dich in diesem Kurs vermutlich langweilen. <br><br>\
-            Du brauchst für den Kurs absolut keine Vorkenntnisse. Falls du bisher noch nichts mit Informatik zu tun hattest, kannst du hier raus finden, ob es überhaupt etwas für dich ist.\
-            Wir haben keinen festen Stundenplan für den Kurs und richten uns nach dir, was dich interessiert und was du lernen möchtest! Mithilfe von Python werden wir uns die Grundlagen gemeinsam anschauen, für Fortgeschrittene haben wir die Spieleprogrammierung mit dem Python-Modul Arcade vorbereitet. Bei uns brauchst du keine Angst haben, Fragen zu stellen oder Fehler zu machen.<br><br>\
-            Du kannst gerne deinen eigenen Laptop mitbringen oder dir von uns einen leihen. Der Kurs ist kostenlos!<br><br>\
-            <br>\
-            Schau im Abschnitt Anmeldung nach.";
+            Am 3.04.2025 sind wir wieder beim <a href=https://www.girls-day.de/.oO/Show/unicornscode/mission-informatik-deine-reise-ins-universum-der-technik>Girl's Day</a> dabei!<br><br>\
+            Gemeinsam tauchen wir in das Universum der Informatik ein. Hier hast du die Chance auf ein spannendes Abenteuer als Wissenschaftlerin auf einer Weltraummission!<br><br>\
+            Leider sind bereits alle Plätze belegt! Schaue doch gerne nächstes Jahr vorbei oder schicke uns eine Nachricht im Abschnitt Anmeldung! ";
             document.getElementById("registerContainer").innerHTML = '';
         }
 
@@ -83,7 +78,11 @@
             var generalInquiryDomain = "unicornsco.de";
             var generalInquiryEmail = generalInquiryUser + "@" + generalInquiryDomain;
 
-            document.getElementById("paragraphText").innerHTML = "Wir sind eine Gruppe von  Informatiker*innen, die in Zusammenarbeit mit dem Chaos Computer Club Hannover junge MINTA*s (Mädchen, Inter, Non-Binär, Trans- und Agender) für das Programmieren begeistern wollen.<br><br>Da wir selber als FINTA* im Informatikstudium unterrepräsentiert sind, möchten wir mehr Diversität in die Informatik bringen! Mit unseren Kursen senken wir die Hürde um sich mit Computern auseinander zu setzen. Hier kann man alle Fragen stellen und braucht keine Angst vor Neuem haben.<br><br> Wir bieten wöchentliche Kurstreffen an, dort nehmen wir uns mit einer fortlaufenden Gruppe ein größeres Projekt vor und programmieren das zusammen. Hier entsteht am Ende des Kurses meistens ein kleines Spiel. Ein Einstieg ist jederzeit möglich.<br> Die aktuellen Termine findet ihr unter dem Abschnitt Programm.<br><br> Alle unsere Angebote richten sich an MINTA*s zwischen 13 und 16 Jahren ohne Vorkenntnisse. <br>Laptops können selber mitgebracht werden, falls keiner vorhanden ist, stellen wir euch gerne einen zur Verfügung. Alle Kurse sind kostenlos!<br><br> Bei Fragen schreibt uns gerne an <a href=\"mailto:" + generalInquiryEmail + "\">" + generalInquiryEmail + "</a>, wir freuen uns auf euch :)";
+            document.getElementById("paragraphText").innerHTML = "Wir sind eine Gruppe von Informatiker*innen, die in Zusammenarbeit mit dem Chaos Computer Club Hannover FINTA*s (Frauen und Mädchen, Inter, Non-Binär, Trans- und Agender) für die Informatik begeistern wollen.<br><br>\
+            Da wir selber als FINTA* im Informatikstudium unterrepräsentiert sind und waren, möchten wir mehr Diversität in die Informatik bringen! Mit unseren Angeboten senken wir die Hürde um sich mit Computern auseinander zu setzen. Hier kann man alle Fragen stellen und braucht keine Angst vor Neuem haben.\
+            Wenn ihr eine nette Community von Gleichgesinnten sucht, sprecht uns gerne an oder kommt vorbei!<br><br>\
+            Die aktuellen Termine findet ihr unter dem Abschnitt Programm.<br><br>\
+            Alle Angebote sind kostenlos!<br><br> Bei Fragen schreibt uns gerne an <a href=\"mailto:" + generalInquiryEmail + "\">" + generalInquiryEmail + "</a>, wir freuen uns auf euch :)";
             document.getElementById("registerContainer").innerHTML = '';
         }
 
@@ -132,7 +131,7 @@
             var issuesDomain = "unicornsco.de";
             var issuesEmail = issuesUser + "@" + issuesDomain;
 
-            document.getElementById("paragraphText").innerHTML = "Hier kannst du deine Anmeldung an uns (<a href=\"mailto:" + generalInquiryEmail + "\">" + generalInquiryEmail + "</a>) für die Kurse abschicken. Falls es Probleme mit dem Formular oder der E-mail gibt, schreibe deine Nachricht an <a href=\"mailto:" + issuesEmail + "\">" + issuesEmail + "</a>.";
+            document.getElementById("paragraphText").innerHTML = "Hier kannst du deine Anmeldung an uns (<a href=\"mailto:" + generalInquiryEmail + "\">" + generalInquiryEmail + "</a>) für unsere Angebote abschicken. Falls es Probleme mit dem Formular oder der E-mail gibt, schreibe deine Nachricht an <a href=\"mailto:" + issuesEmail + "\">" + issuesEmail + "</a>.";
 
             document.getElementById("registerContainer").innerHTML = '<object class="registerObject" data="form.html"></object>';
         }
