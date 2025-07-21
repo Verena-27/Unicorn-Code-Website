@@ -16,14 +16,14 @@ export const SideBarData = [
         title: "Über uns",
         link: "/aboutus"
     },
-    {
+    /*{
         title: "Dateien",
         link: "/files"
     },
     {
         title: "Aufgaben",
         link: "/exercises"
-    },
+    },*/
     {
         title: "Kontakt",
         link: "/contact"
