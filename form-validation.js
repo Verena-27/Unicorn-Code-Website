@@ -17,7 +17,7 @@ function formValidation(){
 	Email: ${email.value}${linebreak}
 	Interesse an: ${interest.value}${linebreak}
 	Bemerkungen: ${note.value}`;
-	window.location.href = `mailto:anmeldung@unicornsco.de?subject=${subj}&body=${mailbody}`;
+	window.location.href = `mailto:stina@unicornsco.de?subject=${subj}&body=${mailbody}`;
 	return true;
 	
 	//Laptop: ${laptop.value}${linebreak}
