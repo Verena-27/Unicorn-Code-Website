@@ -1,59 +1,129 @@
-import Accordion from 'react-bootstrap/Accordion';
+import Accordion from "react-bootstrap/Accordion";
+import { Row, Col, Image } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+function Dates() {
+  return (
+    <div className="main">
+      <h2>Programm</h2>
+      Am 18.10.2025 findet unser Ersti Treffen statt!
+      <Accordion
+        data-bs-theme="dark"
+        className="accordion"
+        defaultActiveKey="0"
+      >
+        <Accordion.Item eventKey="network25">
+          <Accordion.Header>Ersti Treffen 2025 Pubquiz</Accordion.Header>
+          <Accordion.Body>
+            <Row className="align-items-center">
+              <Col md={4}>
+                <Image src="/img/dummy.jpg" alt="Ersti Treffen 2025" fluid />
+              </Col>
+              <Col md={8}>Elchkeller get together und Pubquiz.</Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      <br />
+      Du kannst nicht bis nächstes Jahr warten? Dann komm zu einem unserer
+      offenen Treffen!
+      <br />
+      <br />
+      <h2>Verganene Veranstaltungen</h2>
+      Hier siehst du eine Übersicht über unsere verganen Veranstaltungen und ein
+      paar Eindrücke.
+      {/* === Girls Day === */}
+      <h3>Girl's Day</h3>
+      <Accordion
+        data-bs-theme="dark"
+        className="accordion"
+        defaultActiveKey="0"
+      >
+        <Accordion.Item eventKey="girlsday25">
+          <Accordion.Header>Girl's Day 2025 Weltraumabenteuer</Accordion.Header>
+          <Accordion.Body>
+            <Row className="align-items-center">
+              <Col md={4}>
+                <Image src="/img/dummy.jpg" alt="Girl's Day 2025" fluid />
+              </Col>
+              <Col md={8}>Weltraumabenteuer.</Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
 
-function Dates(){
+        <Accordion.Item eventKey="girlsday24">
+          <Accordion.Header>Girl's Day 2024 Löten</Accordion.Header>
+          <Accordion.Body>
+            <Row className="align-items-center">
+              <Col md={4}>
+                <Image src="/img/dummy.jpg" alt="Girl's Day 2024" fluid />
+              </Col>
+              <Col md={8}>
+                Wir möchten mit euch an Einhorn-Robotern basteln und löten! Wenn
+                du MINTA* zwischen 10 und 13 bist, melde dich auf der
+                offiziellen
+                <a href="https://www.girls-day.de/.oO/Show/unicornscode/einhorn-roboter-und-loetwerkstatt">
+                  {" "}
+                  Webseite
+                </a>{" "}
+                an.
+              </Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      {/* === Ersti Treffen === */}
+      <h3 className="mt-4">Ersti Treffen</h3>
+      <Accordion
+        data-bs-theme="dark"
+        className="accordion"
+        defaultActiveKey="0"
+      >
+        <Accordion.Item eventKey="network24">
+          <Accordion.Header>Ersti Treffen WiSe 2024</Accordion.Header>
+          <Accordion.Body>
+            <Row className="align-items-center">
+              <Col md={4}>
+                <Image src="/img/dummy.jpg" alt="Ersti Treffen 2024" fluid />
+              </Col>
+              <Col md={8}>Elchkeller get together.</Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      {/* === Hackover === */}
+      <h3 className="mt-4">Hackover</h3>
+      <Accordion
+        data-bs-theme="dark"
+        className="accordion"
+        defaultActiveKey="0"
+      >
+        <Accordion.Item eventKey="hackover25">
+          <Accordion.Header>Hackover 2025 Weltraumabenteuer</Accordion.Header>
+          <Accordion.Body>
+            <Row className="align-items-center">
+              <Col md={4}>
+                <Image src="/img/dummy.jpg" alt="Hackover 2025" fluid />
+              </Col>
+              <Col md={8}>CCC Mitglieder testen den Girls Day Kurs</Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
 
-    return(
-        <div className='content'>
-            <h2>Programm</h2>
-            Am 25.04.2024 ist Girl's Day! Und wir sind dabei, du auch?
-            <Accordion data-bs-theme="dark" className="accordion" defaultActiveKey="1">
-                <Accordion.Item eventKey="girlsday">
-                    <Accordion.Header>Girl's Day 2024</Accordion.Header>
-                    <Accordion.Body>
-                        Wir möchten mit euch an Einhorn-Robotern basteln und löten! 
-                        Wenn du MINTA* zwischen 10 und 13 bist, melde dich 
-                        auf der offiziellen
-                        <a href="https://www.girls-day.de/.oO/Show/unicornscode/einhorn-roboter-und-loetwerkstatt"> Webseite</a> an.
-                    </Accordion.Body>
-                </Accordion.Item>
-        </Accordion>
-
-        <br/>Du kannst nicht bis nächstes Jahr warten? Dann komm in unserem laufenden Kurs vorbei!<br/><br/>
-
-        Du brauchst für den Kurs absolut keine Vorkenntnisse. Falls du bisher noch nichts mit Informatik zu tun hattest, kannst du hier raus finden, ob es überhaupt etwas für dich ist.
-        Wir haben keinen festen Stundenplan für den Kurs und richten uns nach dir, was dich interessiert und was du lernen möchtest! Bei uns brauchst du keine Angst haben, Fragen zu stellen oder Fehler zu machen.
-        Du kannst gerne deinen eigenen Laptop mitbringen oder dir von uns einen leihen. 
-        <Accordion data-bs-theme="dark" className='accordion'>
-            <Accordion.Item eventKey="course">
-                <Accordion.Header>Laufender Kurs montags 17.30-19.00 Uhr</Accordion.Header>
-                <Accordion.Body>
-                    Der aktuelle Kurs zum Programmieren lernen findet in der Bürgerschule Stadtteilzentrum Nordstadt statt (in den Ferien findet kein Kurs statt). 
-                    Du kannst jederzeit anfangen mitzumachen (Der Kurs hat am 28.08.2023 angefangen)!
-                    Der Kurs richtet sich an absolute Anfänger*innen. Falls du schonmal etwas programmiert hast,  
-                    wirst du dich in diesem Kurs vermutlich langweilen.
-                    Der Kurs ist kostenlos!
-                </Accordion.Body>
-            </Accordion.Item>
-        </Accordion>
-
-        <br/>Vergangene Veranstaltungen<br/>
-
-        <Accordion data-bs-theme="dark" className="accordion">
-            <Accordion.Item eventKey='network23'>
-                <Accordion.Header>Networking</Accordion.Header>
-                <Accordion.Body>FINTA* Informatik Erstis</Accordion.Body>
-            </Accordion.Item>
-
-            <Accordion.Item eventKey='hackover23'>
-                <Accordion.Header>Hackover</Accordion.Header>
-                <Accordion.Body>setup</Accordion.Body>
-            </Accordion.Item>
-        </Accordion>
-        </div>
-
-    );
+        <Accordion.Item eventKey="hackover24">
+          <Accordion.Header>Hackover 2024 Häkeln</Accordion.Header>
+          <Accordion.Body>
+            <Row className="align-items-center">
+              <Col md={4}>
+                <Image src="/img/dummy.jpg" alt="Hackover 2024" fluid />
+              </Col>
+              <Col md={8}>Gemeinsames Häkeln.</Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+    </div>
+  );
 }
 
 export default Dates;

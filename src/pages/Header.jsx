@@ -1,27 +1,36 @@
 import React from "react";
 
-function Header(){
-    return(
-        <div className="header">
-            <div className="flex-container-top">
-                <div className="animation-container">
-                    <div className="header-container">
-                        <img className="logo2" src={require("../img/unicornonly.png")} alt="UnicornsLogo"></img>
-                    </div>
-                </div>
-
-                <div className="header-container">
-                    <img className="logo1" src={require("../img/unicornonly.png")} alt="UnicornsLogo"></img>
-                </div>
-                <div className="header-container">
-                    <img className="font" src={require("../img/fontonly.png")} alt="UnicornsFont"></img>
-
-                </div>
-                
-            </div>
-            
+function Header() {
+  return (
+    <div className="header">
+      <div className="flex-container-top">
+        <div className="animation-container">
+          <div className="header-container">
+            <img
+              className="logo2"
+              src="/img/unicornonly.png"
+              alt="UnicornsLogo"
+            ></img>
+          </div>
         </div>
-    );
+
+        <div className="header-container">
+          <img
+            className="logo1"
+            src="/img/unicornonly.png"
+            alt="UnicornsLogo"
+          ></img>
+        </div>
+        <div className="header-container">
+          <img
+            className="font"
+            src="/img/fontonly.png"
+            alt="UnicornsFont"
+          ></img>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Header;
