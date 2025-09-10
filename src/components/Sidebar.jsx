@@ -21,7 +21,7 @@ function Sidebar() {
       <div className={`Sidebar ${isOpen ? "open" : ""}`}>
         <ul className="SidebarList">
           {SideBarData.map((val, key) => (
-            <li key={key} className="row" onClick={handleClick}>
+            <li key={key} onClick={handleClick}>
               <NavLink to={val.link}>{val.title}</NavLink>
             </li>
           ))}
