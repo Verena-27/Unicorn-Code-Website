@@ -29,9 +29,11 @@ function Dates() {
       offenen Treffen!
       <br />
       <br />
-      <h2>Verganene Veranstaltungen</h2>
-      Hier siehst du eine Übersicht über unsere verganen Veranstaltungen und ein
-      paar Eindrücke.
+      <h2>Vergangene Veranstaltungen</h2>
+      Hier siehst du eine Übersicht über unsere vergangenen Veranstaltungen und
+      ein paar Eindrücke.
+      <br></br>
+      <br></br>
       {/* === Girls Day === */}
       <h3>Girl's Day</h3>
       <Accordion
