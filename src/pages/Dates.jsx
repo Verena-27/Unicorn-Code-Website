@@ -21,7 +21,7 @@ function Dates() {
             <Row className="align-items-center">
               <Col md={4}>
                 <Image
-                  src="/img/dummy.jpg"
+                  src="/img/periodenworkshop26.jpg"
                   alt="Periodenapps Workshop 2026"
                   fluid
                 />
@@ -31,7 +31,11 @@ function Dates() {
                 Im Rahmen der DiDays bieten wir einen Workshop zu privacy
                 freundlichen Periodenapps an. Mehr Informationen findest du auf
                 der{" "}
-                <a href="https://termine.di.day/events/781b4747-05db-4657-afe4-2160e9d69ae7">
+                <a
+                  href="https://termine.di.day/events/781b4747-05db-4657-afe4-2160e9d69ae7"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   {" "}
                   Webseite des Di.Day.
                 </a>{" "}
@@ -44,15 +48,16 @@ function Dates() {
           <Accordion.Header>Girl's Day 2026 Weltraumabenteuer</Accordion.Header>
           <Accordion.Body>
             <Row className="align-items-center">
-              <Col md={4}>
-                <Image src="/img/dummy.jpg" alt="Ersti Treffen 2025" fluid />
-              </Col>
               <Col md={8}>
-                <h4>23. April 2025</h4>
+                <h4>23. April 2026</h4>
                 Das Weltraumabenteuer geht in die zweite Runde! Freut euch auf
                 spannende Herausforderungen, um zurück zur Erde zu gelangen.
-                Mehr Informationen findest du auf der{" "}
-                <a href="https://www.girls-day.de/.oO/Show/unicornscode/mission-informatik-deine-reise-ins-universum-der-technik.1">
+                Mehr Informationen für eine Anmeldung findest du auf der{" "}
+                <a
+                  href="https://www.girls-day.de/.oO/Show/unicornscode/mission-informatik-deine-reise-ins-universum-der-technik.1"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   {" "}
                   Webseite.
                 </a>{" "}
@@ -66,8 +71,7 @@ function Dates() {
       <br />
       <br />
       <h2>Vergangene Veranstaltungen</h2>
-      Hier siehst du eine Übersicht über unsere vergangenen Veranstaltungen und
-      ein paar Eindrücke.
+      Hier siehst du eine Übersicht über unsere vergangenen Veranstaltungen.
       <br></br>
       <br></br>
       {/* === Girls Day === */}
@@ -82,7 +86,18 @@ function Dates() {
           <Accordion.Body>
             <Row className="align-items-center">
               <Col md={4}>
-                <Image src="/img/dummy.jpg" alt="Girl's Day 2025" fluid />
+                <Image
+                  src="/img/girlsday25-1.jpg"
+                  alt="Girl's Day 2025"
+                  fluid
+                />
+                <br></br>
+                <br></br>
+                <Image
+                  src="/img/girlsday25-3.jpg"
+                  alt="Girl's Day 2025"
+                  fluid
+                />
               </Col>
               <Col md={8}>
                 <h4>23. April 2025</h4>
@@ -90,7 +105,11 @@ function Dates() {
                 Schnitzeljagd absolviert. Dabei haben sie Grundlagen der
                 Kryptographie, Programmierung, und Algorithmik kennengelernt.
                 Mehr Informationen findest du auf der{" "}
-                <a href="https://www.girls-day.de/.oO/Show/unicornscode/mission-informatik-deine-reise-ins-universum-der-technik.1">
+                <a
+                  href="https://www.girls-day.de/.oO/Show/unicornscode/mission-informatik-deine-reise-ins-universum-der-technik.1"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   {" "}
                   Webseite.
                 </a>{" "}
@@ -104,14 +123,18 @@ function Dates() {
           <Accordion.Body>
             <Row className="align-items-center">
               <Col md={4}>
-                <Image src="/img/dummy.jpg" alt="Girl's Day 2024" fluid />
+                <Image src="/img/girlsday24.jpg" alt="Girl's Day 2024" fluid />
               </Col>
               <Col md={8}>
                 <h4>25. April 2024</h4>
                 In dem Workshop konnten die Schüler*innen blockbasiertes
                 Programmieren mit Einhorn-Robotern und das Löten einer
                 Spielkonsole ausprobieren. Mehr Informationen findest du auf der{" "}
-                <a href="https://www.girls-day.de/.oO/Show/unicornscode/einhorn-roboter-und-loetwerkstatt">
+                <a
+                  href="https://www.girls-day.de/.oO/Show/unicornscode/einhorn-roboter-und-loetwerkstatt"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   {" "}
                   Webseite
                 </a>{" "}
@@ -133,14 +156,17 @@ function Dates() {
           <Accordion.Body>
             <Row className="align-items-center">
               <Col md={4}>
-                <Image src="/img/dummy.jpg" alt="Pubquiz 2025" fluid />
-                <Image src="/img/dummy.jpg" alt="Armbänder basteln" fluid />
+                <Image src="/img/pubquiz25-1.jpg" alt="Pubquiz 2025" fluid />
+
+                <br></br>
+                <br></br>
+                <Image src="/img/pubquiz25.jpg" alt="Armbänder basteln" fluid />
               </Col>
               <Col md={8}>
                 <h4>Oktober 2025</h4>
-                Mehrere Gruppen haben um den ersten Platz im Pubquiz gekämpft.
-                Es gab zudem eine kleine Bastelecke, wobei kreative Armbänder
-                entstanden sind.
+                Mehrere Gruppen haben um den ersten Platz beim Pubquiz im
+                Elchkeller gekämpft. Es gab zudem eine kleine Bastelecke, wobei
+                kreative Armbänder entstanden sind.
               </Col>
             </Row>
           </Accordion.Body>
@@ -151,12 +177,16 @@ function Dates() {
           <Accordion.Body>
             <Row className="align-items-center">
               <Col md={4}>
-                <Image src="/img/dummy.jpg" alt="Ersti Treffen 2024" fluid />
+                <Image
+                  src="/img/gettogether24.jpg"
+                  alt="Ersti Treffen 2024"
+                  fluid
+                />
               </Col>
               <Col md={8}>
                 <h4>Oktober 2024</h4>
                 Zusammen mit der Unigruppe FINTA* in STEM haben wir ein
-                Vernetzungstreffen für euch organisiert.
+                Vernetzungstreffen im Elchkeller für euch organisiert.
               </Col>
             </Row>
           </Accordion.Body>
@@ -174,11 +204,11 @@ function Dates() {
           <Accordion.Body>
             <Row className="align-items-center">
               <Col md={4}>
-                <Image src="/img/dummy.jpg" alt="Hackover 2025" fluid />
+                <Image src="/img/hackover25.jpg" alt="Hackover 2025" fluid />
               </Col>
               <Col md={8}>
                 <h4>Juli 2025</h4>
-                CCC Mitglieder haben den Girl's Day Kurs "Weltraumabenteuer" für
+                CCC-Mitglieder haben den Girl's Day Kurs "Weltraumabenteuer" für
                 uns getestet und die Einhorn-Roboter durch ein Labyrinth
                 gesteuert.
               </Col>
@@ -191,12 +221,21 @@ function Dates() {
           <Accordion.Body>
             <Row className="align-items-center">
               <Col md={4}>
-                <Image src="/img/dummy.jpg" alt="Hackover 2024" fluid />
+                <Image src="/img/hackover24.jpg" alt="Hackover 2024" fluid />
               </Col>
               <Col md={8}>
                 <h4>August 2024</h4>
                 Mit allen Hacker*innen, die Lust hatten, haben wir kleine
-                Einhörner gehäkelt und uns ausgetauscht.
+                Einhörner gehäkelt und uns beim{" "}
+                <a
+                  href="https://calendify.com/schedule/Ejw4Ye74Q1G?hl=en"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {" "}
+                  CCC-Cozy Crochet Corner
+                </a>{" "}
+                ausgetauscht.
               </Col>
             </Row>
           </Accordion.Body>
@@ -214,7 +253,11 @@ function Dates() {
           <Accordion.Body>
             <Row className="align-items-center">
               <Col md={4}>
-                <Image src="/img/dummy.jpg" alt="Sommerfest 2025" fluid />
+                <Image
+                  src="/img/sommerfest25.jpg"
+                  alt="Sommerfest 2025"
+                  fluid
+                />
               </Col>
               <Col md={8}>
                 <h4>3. Juli 2025</h4>
@@ -239,7 +282,7 @@ function Dates() {
           <Accordion.Body>
             <Row className="align-items-center">
               <Col md={4}>
-                <Image src="/img/dummy.jpg" alt="Sommerfest 2025" fluid />
+                <Image src="/img/frauentag25.jpg" alt="Frauentag 2025" fluid />
               </Col>
               <Col md={8}>
                 <h4>8. März 2025</h4>
@@ -254,7 +297,7 @@ function Dates() {
           <Accordion.Body>
             <Row className="align-items-center">
               <Col md={4}>
-                <Image src="/img/dummy.jpg" alt="Sommerfest 2025" fluid />
+                <Image src="/img/frauentag24.jpg" alt="Frauentag 2024" fluid />
               </Col>
               <Col md={8}>
                 <h4>8. März 2024</h4>

@@ -33,6 +33,7 @@ function About() {
         ohne Vorkenntnisse. <br />
         Laptops können selber mitgebracht werden, falls keiner vorhanden ist,
         stellen wir euch gerne einen zur Verfügung. Alle Kurse sind kostenlos!
+        Wir waren bei startsocial dabei!
         <br />
         <br /> Bei Fragen schreibt uns gerne an{" "}
         <a href={`mailto:${generalInquiryEmail}`}>{generalInquiryEmail}</a>, wir
