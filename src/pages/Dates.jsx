@@ -185,8 +185,10 @@ function Dates() {
               </Col>
               <Col md={8}>
                 <h4>Oktober 2024</h4>
-                Zusammen mit der Unigruppe FINTA* in STEM haben wir ein
-                Vernetzungstreffen im Elchkeller für euch organisiert.
+                Zusammen mit der Unigruppe{" "}
+                <span style={{ fontStyle: "italic" }}>FLINTA* in STEM </span>
+                haben wir ein Vernetzungstreffen im Elchkeller für euch
+                organisiert.
               </Col>
             </Row>
           </Accordion.Body>
@@ -303,6 +305,33 @@ function Dates() {
                 <h4>8. März 2024</h4>
                 Gemeinsam waren wir mit euch auf der Straße für
                 Gleichberechtigung unterwegs.
+              </Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      {/* === Programmierkurs === */}
+      <h3 className="mt-4">Programmierkurs</h3>
+      <Accordion
+        data-bs-theme="dark"
+        className="accordion"
+        defaultActiveKey="0"
+      >
+        <Accordion.Item eventKey="frauentag25">
+          <Accordion.Header>Programmierkurs 2023/2024</Accordion.Header>
+          <Accordion.Body>
+            <Row className="align-items-center">
+              <Col md={4}>
+                <Image src="/img/course23-24.jpeg" alt="Kurs 2023/2024" fluid />
+                <br></br>
+                <br></br>
+                <Image src="/img/course.jpg" alt="Kurs 2023/2024" fluid />
+              </Col>
+              <Col md={8}>
+                <h4>Juli 2023 - Juni 2024</h4>
+                Wir haben mit euch zusammen in einem wöchentlichen Kurs
+                programmieren gelernt und am Ende ein eigenes Spiel mit Python
+                entwickelt.
               </Col>
             </Row>
           </Accordion.Body>

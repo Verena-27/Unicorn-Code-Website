@@ -6,23 +6,31 @@ function Home() {
     <div className="main">
       <h2 className="heading">Willkommen bei den Unicorns!</h2>
       <p>
-        Du willst programmieren lernen? Hast Lust, dein eigenes Spiel zu
-        entwickeln? Oder willst einfach mal gucken, was Informatik überhaupt ist
-        und ob du dich dafür interessierst?
+        Wir sind UnicornsCode, eine Initiative von Informatiker*innen, die
+        FINTA* (Frauen, Inter, Non-Binär, Trans- und Agender) in allen
+        Altersstufen für Informatik begeistern wollen und zusammenbringen.
+        Zusammen mit dem{" "}
+        <a href="https://hannover.ccc.de/">Chaos Computer Club Hannover</a> und
+        der{" "}
+        <a href="https://www.stadtteil-zentrum-nordstadt.de/">
+          Bürgerschule Stadtteilzentrum Nordstadt
+        </a>{" "}
+        organisieren wir regelmäßig Girl's Days, Vernetzungstreffen und
+        Workshops für FINTA* in Hannover.
+      </p>
+      <p>
+        Du willst etwas über Informatik lernen? Andere FINTA* in Informatik
+        kennen lernen? Oder willst einfach mal ausprobieren, ob das Universum
+        Informatik etwas für dich ist? Dann bist du bei uns genau richtig! Schau
+        in unser aktuelles <a href="/dates">Programm</a> rein, um zu sehen, was
+        wir anbieten und was ansteht!
       </p>
 
       <p>
-        Wir bieten Programmierkurse für MINTA* (Mädchen, Inter, Non-Binär,
-        Trans- und Agender) von 13-16 Jahren an, für die du kein Vorwissen
-        brauchst! Gemeinsam schauen wir uns zunächst Grundlagen an, sodass du
-        selbstsicher mit einem Computer umgehen kannst!
-      </p>
-
-      <p>
-        Unsere Projekte finden in Kooperation mit der Bürgerschule
-        Stadtteilzentrum Nordstadt und dem Chaos Computer Club Hannover statt.
-        Der im Sommer 2023 startende wöchentliche Kurs wird von der
-        Bürgerstiftung Hannover gefördert.
+        Du hast eine Idee für eine Veranstaltung oder ein Projekt? Brauchst
+        Unterstützung bei der Umsetzung? Oder möchtest bei uns mitmachen? Dann
+        melde dich gerne bei uns, wir freuen uns über jede Unterstützung! Hier
+        kannst du mit uns <a href="/contact">Kontakt</a> aufnehmen.
       </p>
 
       <div className="image-row">
