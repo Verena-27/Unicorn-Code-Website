@@ -50,7 +50,7 @@
 
 /* ========= ACCORDION ========= */
 .accordion {
-  width: 80%;
+  width: 90%;
   --bs-accordion-active-color: darkmagenta !important;
   --bs-accordion-active-bg: black !important;
   --bs-border-color: white !important;
