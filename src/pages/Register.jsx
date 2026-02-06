@@ -6,26 +6,18 @@ import Row from "react-bootstrap/Row";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Register() {
-  // Email for general inquiries
-  var generalInquiryUser = "anmeldung";
-  var generalInquiryDomain = "unicornsco.de";
-  var generalInquiryEmail = generalInquiryUser + "@" + generalInquiryDomain;
-
-  // Email for form or email-related issues
-  var issuesUser = "tatjana";
-  var issuesDomain = "unicornsco.de";
-  var issuesEmail = issuesUser + "@" + issuesDomain;
   return (
     <>
       <div className="main ">
         <h2 className="heading">Anmeldung</h2>
         <p>
           Hier kannst du deine Anmeldung an uns (
-          <a href={`mailto:${generalInquiryEmail}`}>{generalInquiryEmail}</a>)
-          für die Kurse abschicken. Falls es Probleme mit dem Formular oder der
-          E-mail gibt, schreibe deine Nachricht an{" "}
-          <a href={`mailto:${issuesEmail}`}>{issuesEmail}</a>. Bitte beachte,
-          dass sich unsere Angebote an MINTA* von 13-16 Jahren richten.
+          <a href={`mailto:info@unicornsco.de`}>info@unicornsco.de</a>) für die
+          Kurse abschicken. Falls es Probleme mit dem Formular oder der E-mail
+          gibt, schreibe deine Nachricht an{" "}
+          <a href={`mailto:tatjana@unicornsco.de`}>tatjana@unicornsco.de</a>.
+          Bitte beachte, dass sich unsere Angebote an MINTA* von 13-16 Jahren
+          richten.
         </p>
         <Form className="register">
           <Form.Group as={Row} className="mb-3" controlId="formBasicEmail">

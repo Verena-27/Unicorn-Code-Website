@@ -2,10 +2,6 @@ import "../App.css";
 import React from "react";
 
 function About() {
-  // Email for general inquiries
-  var generalInquiryUser = "info";
-  var generalInquiryDomain = "unicornsco.de";
-  var generalInquiryEmail = generalInquiryUser + "@" + generalInquiryDomain;
   return (
     <div className="main">
       <h2 className="heading">Über uns</h2>

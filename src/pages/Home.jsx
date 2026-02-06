@@ -34,7 +34,7 @@ function Home() {
       </p>
 
       <div className="image-row">
-        <img src="/img/main-2.jpg" alt="Einhorn-Roboter" />
+        <img src="/img/main-2.1.jpg" alt="Einhorn-Roboter" />
         <img src="/img/pubquiz25-1.jpg" alt="Pubquiz 2025" />
         <img src="/img/girlsday25-1.jpg" alt="Girl's Day 2025" />
       </div>
