@@ -14,8 +14,8 @@ function Dates() {
       >
         <Accordion.Item eventKey="period26">
           <Accordion.Header>
-            Ich weiß, wann du letzten Sommer geblutet hast - Privacy freundliche
-            Periodenapps
+            1. März 2026: Ich weiß, wann du letzten Sommer geblutet hast -
+            Privacy freundliche Periodenapps
           </Accordion.Header>
           <Accordion.Body>
             <Row className="align-items-center">
@@ -29,8 +29,11 @@ function Dates() {
               <Col md={8}>
                 <h4>1. März 2026</h4>
                 Im Rahmen der DiDays bieten wir einen Workshop zu privacy
-                freundlichen Periodenapps an. Mehr Informationen findest du auf
-                der{" "}
+                freundlichen Periodenapps an. Wir starten um 14 Uhr in der{" "}
+                <a href="https://www.stadtteil-zentrum-nordstadt.de/">
+                  Bürgerschule Nordstadt
+                </a>
+                . Mehr Informationen findest du auf der{" "}
                 <a
                   href="https://termine.di.day/events/781b4747-05db-4657-afe4-2160e9d69ae7"
                   target="_blank"
@@ -45,7 +48,9 @@ function Dates() {
         </Accordion.Item>
 
         <Accordion.Item eventKey="girlsday26">
-          <Accordion.Header>Girl's Day 2026 Weltraumabenteuer</Accordion.Header>
+          <Accordion.Header>
+            23. April 2026: Girl's Day Weltraumabenteuer
+          </Accordion.Header>
           <Accordion.Body>
             <Row className="align-items-center">
               <Col md={8}>
@@ -59,7 +64,7 @@ function Dates() {
                   rel="noreferrer noopener"
                 >
                   {" "}
-                  Webseite.
+                  Girl's Day Webseite.
                 </a>{" "}
               </Col>
             </Row>
@@ -111,7 +116,7 @@ function Dates() {
                   rel="noreferrer noopener"
                 >
                   {" "}
-                  Webseite.
+                  Girl's Day Webseite.
                 </a>{" "}
               </Col>
             </Row>
@@ -136,7 +141,7 @@ function Dates() {
                   rel="noreferrer noopener"
                 >
                   {" "}
-                  Webseite
+                  Girl's Day Webseite
                 </a>{" "}
                 an.
               </Col>
