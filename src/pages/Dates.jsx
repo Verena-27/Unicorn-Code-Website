@@ -12,41 +12,6 @@ function Dates() {
         className="accordion"
         defaultActiveKey="0"
       >
-        <Accordion.Item eventKey="period26">
-          <Accordion.Header>
-            1. März 2026: Ich weiß, wann du letzten Sommer geblutet hast -
-            Privacy freundliche Periodenapps
-          </Accordion.Header>
-          <Accordion.Body>
-            <Row className="align-items-center">
-              <Col md={4}>
-                <Image
-                  src="/img/periodenworkshop26.jpg"
-                  alt="Periodenapps Workshop 2026"
-                  fluid
-                />
-              </Col>
-              <Col md={8}>
-                <h4>1. März 2026</h4>
-                Im Rahmen der DiDays bieten wir einen Workshop zu privacy
-                freundlichen Periodenapps an. Wir starten um 14 Uhr in der{" "}
-                <a href="https://www.stadtteil-zentrum-nordstadt.de/">
-                  Bürgerschule Nordstadt
-                </a>
-                . Mehr Informationen findest du auf der{" "}
-                <a
-                  href="https://termine.di.day/events/781b4747-05db-4657-afe4-2160e9d69ae7"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  {" "}
-                  Webseite des Di.Day.
-                </a>{" "}
-              </Col>
-            </Row>
-          </Accordion.Body>
-        </Accordion.Item>
-
         <Accordion.Item eventKey="girlsday26">
           <Accordion.Header>
             23. April 2026: Girl's Day Weltraumabenteuer
@@ -128,7 +93,12 @@ function Dates() {
           <Accordion.Body>
             <Row className="align-items-center">
               <Col md={4}>
-                <Image src="/img/girlsday24.jpg" alt="Girl's Day 2024" fluid />
+                <Image
+                  src="/img/girlsday24.jpg"
+                  alt="Girl's Day 2024"
+                  style={{ height: "400px" }}
+                  fluid
+                />
               </Col>
               <Col md={8}>
                 <h4>25. April 2024</h4>
@@ -144,6 +114,33 @@ function Dates() {
                   Girl's Day Webseite
                 </a>{" "}
                 an.
+              </Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      {/* === Programmierkurs === */}
+      <h3 className="mt-4">Programmierkurs</h3>
+      <Accordion
+        data-bs-theme="dark"
+        className="accordion"
+        defaultActiveKey="0"
+      >
+        <Accordion.Item eventKey="frauentag25">
+          <Accordion.Header>Programmierkurs 2023/2024</Accordion.Header>
+          <Accordion.Body>
+            <Row className="align-items-center">
+              <Col md={4}>
+                <Image src="/img/course23-24.jpeg" alt="Kurs 2023/2024" fluid />
+                <br></br>
+                <br></br>
+                <Image src="/img/course.jpg" alt="Kurs 2023/2024" fluid />
+              </Col>
+              <Col md={8}>
+                <h4>Juli 2023 - Juni 2024</h4>
+                Wir haben mit euch zusammen in einem wöchentlichen Kurs
+                programmieren gelernt und am Ende ein eigenes Spiel mit Python
+                entwickelt.
               </Col>
             </Row>
           </Accordion.Body>
@@ -194,6 +191,70 @@ function Dates() {
                 <span style={{ fontStyle: "italic" }}>FLINTA* in STEM </span>
                 haben wir ein Vernetzungstreffen im Elchkeller für euch
                 organisiert.
+              </Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      {/*====Workshops====*/}
+      <h3 className="mt-4">Workshops</h3>
+      <Accordion
+        data-bs-theme="dark"
+        className="accordion"
+        defaultActiveKey="0"
+      >
+        <Accordion.Item eventKey="period26">
+          <Accordion.Header>
+            1. & 8. März 2026: Ich weiß, wann du letzten Sommer geblutet hast -
+            Privacy freundliche Periodenapps
+          </Accordion.Header>
+          <Accordion.Body>
+            Die Vortragsfolien findest du im Bereich{" "}
+            <a href="/files">Dateien</a>.<br></br>
+            <br></br>
+            <Row>
+              <Col md={6}>
+                <div style={{ marginBottom: "20px" }}>
+                  <Image
+                    src="/img/didays_2026.jpg"
+                    alt="Workshop 1. März 2026"
+                    fluid
+                    style={{ marginBottom: "10px", height: "300px" }}
+                  />
+                  <h4>1. März 2026</h4>
+                  <p>
+                    Im Rahmen der DiDays haben wir einen Workshop zu privacy
+                    freundlichen Periodenapps angeboten. Interessierte konnten
+                    direkt vor Ort ihre Daten sicher für eine open source
+                    Periodenapp konvertieren lassen. Mehr Informationen findest
+                    du auf der{" "}
+                    <a
+                      href="https://termine.di.day/events/781b4747-05db-4657-afe4-2160e9d69ae7"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      Webseite des Di.Day
+                    </a>
+                    .
+                  </p>
+                </div>
+              </Col>
+
+              {/* Event 2 */}
+              <Col md={6}>
+                <div style={{ marginBottom: "20px" }}>
+                  <Image
+                    src="/img/unisexdays_luh_2026.jpg"
+                    alt="Workshop 8. März 2026"
+                    fluid
+                    style={{ marginBottom: "10px", height: "300px" }}
+                  />
+                  <h4>8. März 2026</h4>
+                  <p>
+                    Im Rahmen der Unisex Days der LUH haben wir uns über die
+                    Gefahren von gängigen Periodenapps ausgetauscht.
+                  </p>
+                </div>
               </Col>
             </Row>
           </Accordion.Body>
@@ -310,33 +371,6 @@ function Dates() {
                 <h4>8. März 2024</h4>
                 Gemeinsam waren wir mit euch auf der Straße für
                 Gleichberechtigung unterwegs.
-              </Col>
-            </Row>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-      {/* === Programmierkurs === */}
-      <h3 className="mt-4">Programmierkurs</h3>
-      <Accordion
-        data-bs-theme="dark"
-        className="accordion"
-        defaultActiveKey="0"
-      >
-        <Accordion.Item eventKey="frauentag25">
-          <Accordion.Header>Programmierkurs 2023/2024</Accordion.Header>
-          <Accordion.Body>
-            <Row className="align-items-center">
-              <Col md={4}>
-                <Image src="/img/course23-24.jpeg" alt="Kurs 2023/2024" fluid />
-                <br></br>
-                <br></br>
-                <Image src="/img/course.jpg" alt="Kurs 2023/2024" fluid />
-              </Col>
-              <Col md={8}>
-                <h4>Juli 2023 - Juni 2024</h4>
-                Wir haben mit euch zusammen in einem wöchentlichen Kurs
-                programmieren gelernt und am Ende ein eigenes Spiel mit Python
-                entwickelt.
               </Col>
             </Row>
           </Accordion.Body>
