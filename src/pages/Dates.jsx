@@ -205,7 +205,7 @@ function Dates() {
       >
         <Accordion.Item eventKey="period26">
           <Accordion.Header>
-            1. & 8. März 2026: Ich weiß, wann du letzten Sommer geblutet hast -
+            1. & 30. März 2026: Ich weiß, wann du letzten Sommer geblutet hast -
             Privacy freundliche Periodenapps
           </Accordion.Header>
           <Accordion.Body>
@@ -249,7 +249,7 @@ function Dates() {
                     fluid
                     style={{ marginBottom: "10px", height: "300px" }}
                   />
-                  <h4>8. März 2026</h4>
+                  <h4>30. März 2026</h4>
                   <p>
                     Im Rahmen der Unisex Days der LUH haben wir uns über die
                     Gefahren von gängigen Periodenapps ausgetauscht.

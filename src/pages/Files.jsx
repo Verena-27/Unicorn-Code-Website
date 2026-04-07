@@ -1,4 +1,4 @@
-import uc_var from "../filecontent/UnicornsCode_Variablen.pdf";
+import uc_var from "../filecontent/Privacyfreundliche_Periodenapps.pdf";
 
 const fileDocuments = [
   {
