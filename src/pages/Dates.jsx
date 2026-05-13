@@ -12,27 +12,41 @@ function Dates() {
         className="accordion"
         defaultActiveKey="0"
       >
-        <Accordion.Item eventKey="girlsday26">
+        <Accordion.Item eventKey="gpn26">
           <Accordion.Header>
-            23. April 2026: Girl's Day Weltraumabenteuer
+            4.-7. Juni 2026: GPN - GulaschProgrammierNacht Karlsruhe
           </Accordion.Header>
           <Accordion.Body>
-            <Row className="align-items-center">
-              <Col md={8}>
-                <h4>23. April 2026</h4>
-                Das Weltraumabenteuer geht in die zweite Runde! Freut euch auf
-                spannende Herausforderungen, um zurück zur Erde zu gelangen.
-                Mehr Informationen für eine Anmeldung findest du auf der{" "}
-                <a
-                  href="https://www.girls-day.de/.oO/Show/unicornscode/mission-informatik-deine-reise-ins-universum-der-technik.1"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  {" "}
-                  Girl's Day Webseite.
-                </a>{" "}
-              </Col>
-            </Row>
+            Falls ihr Tickets für die{" "}
+            <a
+              href="https://cfp.gulas.ch/gpn24/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GPN
+            </a>{" "}
+            ergattert habt, schaut gerne beim Vortrag von unserem Kollegen Tim
+            Wittenborg vom{" "}
+            <a
+              href="https://en.borgnetzwerk.org/wisskomm-wiki-2026/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              BorgNetzWerk
+            </a>{" "}
+            vorbei! Er wird über eine gemeinsame Wissens-Infrastruktur sprechen
+            um Wissen besser auffindbar zu machen. Außerdem teilt er seine
+            Erfahrungen über SpeakerMining, welches unter anderem einen großen
+            Gender Bias in politischen Talkshows aufdeckt. Mehr Informationen
+            findest du auf der{" "}
+            <a
+              href="https://cfp.gulas.ch/gpn24/talk/review/VNGNN7D8RGU3BKGLTYJG8FHU7KKEHHKD"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Veranstaltungsseite
+            </a>
+            .
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
@@ -51,6 +65,39 @@ function Dates() {
         className="accordion"
         defaultActiveKey="0"
       >
+        <Accordion.Item eventKey="girlsday26">
+          <Accordion.Header>
+            Girl's Day 2026: Weltraumabenteuer II
+          </Accordion.Header>
+          <Accordion.Body>
+            <Row className="align-items-center">
+              <Col md={4}>
+                <Image
+                  src="/img/girlsday26.jpg"
+                  alt="Girl's Day 2026"
+                  style={{ height: "400px" }}
+                  fluid
+                />
+              </Col>
+              <Col md={8}>
+                <h4>23. April 2026</h4>
+                Das Weltraumabenteuer ging in die zweite Runde! Ihr habt es
+                geschafft. Dieses Mal konntet ihr die Erde mithilfe von LEDs auf
+                Platinen benachrichtigen, dass ihr wohlauf seid und euch auf den
+                Heimweg macht. Mehr Informationen findest du auf der{" "}
+                <a
+                  href="https://www.girls-day.de/.oO/Show/unicornscode/mission-informatik-deine-reise-ins-universum-der-technik.1"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {" "}
+                  Girl's Day Webseite.
+                </a>{" "}
+              </Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
+
         <Accordion.Item eventKey="girlsday25">
           <Accordion.Header>Girl's Day 2025 Weltraumabenteuer</Accordion.Header>
           <Accordion.Body>
@@ -197,7 +244,7 @@ function Dates() {
         </Accordion.Item>
       </Accordion>
       {/*====Workshops====*/}
-      <h3 className="mt-4">Workshops</h3>
+      <h3 className="mt-4">Workshops und Vorträge</h3>
       <Accordion
         data-bs-theme="dark"
         className="accordion"
@@ -243,12 +290,36 @@ function Dates() {
               {/* Event 2 */}
               <Col md={6}>
                 <div style={{ marginBottom: "20px" }}>
-                  <Image
-                    src="/img/unisexdays_luh_2026.jpg"
-                    alt="Workshop 8. März 2026"
-                    fluid
-                    style={{ marginBottom: "10px", height: "300px" }}
-                  />
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "10px",
+                    }}
+                  >
+                    <Image
+                      src="/img/unisexdays_luh_2026.jpg"
+                      alt="Workshop 30. März 2026"
+                      fluid
+                      style={{
+                        height: "300px",
+                        width: "30%",
+                        objectFit: "cover",
+                        marginBottom: "20px",
+                      }}
+                    />
+
+                    <Image
+                      src="/img/unisexdays_luh_2026-1.jpg"
+                      alt="Workshop 30. März 2026"
+                      fluid
+                      style={{
+                        height: "300px",
+                        width: "50%",
+                        objectFit: "cover",
+                        marginBottom: "20px",
+                      }}
+                    />
+                  </div>
                   <h4>30. März 2026</h4>
                   <p>
                     Im Rahmen der Unisex Days der LUH haben wir uns über die
