@@ -33,8 +33,23 @@ function About() {
             <a href="https://startsocial.de/das-war-das-startsocial-jahr-2025">
               startsocial
             </a>{" "}
-            dabei! Dabei haben wir tolle Unterstützung von zwei Coaches
-            bekommen, die uns bei der Weiterentwicklung unserer Organisation
+            dabei! Dabei haben wir tolle Unterstützung von zwei Coaches (
+            <a
+              href="https://narikahle.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Nari Kahle
+            </a>
+            ,{" "}
+            <a
+              href="https://www.linkedin.com/in/bahnemann/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Bastian Bahnmann
+            </a>
+            ) bekommen, die uns bei der Weiterentwicklung unserer Organisation
             geholfen haben. Gemeinsam haben wir den Schwerpunkt auf Vernetzung
             sowie die Förderung durch den Girl’s Day für die nächste Zeit
             festgelegt.
