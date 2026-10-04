@@ -9,6 +9,7 @@ import Exercises from "./pages/Exercises";
 import Dates from "./pages/Dates";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Links from "./pages/Links";
 // <Route path="/register" element={<Register></Register>}></Route>;
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/home" element={<Home></Home>}></Route>
             <Route path="/dates" element={<Dates></Dates>}></Route>
             <Route path="/aboutus" element={<About></About>}></Route>
+            <Route path="/links" element={<Links></Links>}></Route>
             <Route path="/files" element={<Files></Files>}></Route>
             <Route path="/exercises" element={<Exercises />}></Route>
             <Route path="/contact" element={<Contact />}></Route>

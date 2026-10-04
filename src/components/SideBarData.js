@@ -16,6 +16,10 @@ export const SideBarData = [
     link: "/aboutus",
   },
   {
+    title: "Links",
+    link: "/links",
+  },
+  {
     title: "Dateien",
     link: "/files",
   },

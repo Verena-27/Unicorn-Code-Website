@@ -70,10 +70,42 @@ function About() {
         </div>
         <div className="image-row">
           <img src="/img/verena.jpg" alt="Verena" />
-          <img src="/img/andriyan.jpg" alt="Andriyan" />
           <img src="/img/lena.jpg" alt="Lena" />
         </div>
+        Alumni:
+        <div className="image-row">
+          <img src="/img/andriyan.jpg" alt="Andriyan" />
+        </div>
       </p>
+      <div className="partner-section">
+        <h3>Partner</h3>
+        <div className="partner-row">
+          <a
+            href="https://leitstelle511.net/"
+            target="_blank"
+            rel="noreferrer"
+            className="partner-logo"
+          >
+            <img src="/img/ccc_logo.jpeg" alt="Chaos Computer Club" />
+          </a>
+          <a
+            href="https://www.instagram.com/flinta_in_stem_luh/"
+            target="_blank"
+            rel="noreferrer"
+            className="partner-logo"
+          >
+            <img src="/img/flinta_in_stem_logo.png" alt="FLINTA*in STEM" />
+          </a>
+          <a
+            href="https://borgnetzwerk.org/"
+            target="_blank"
+            rel="noreferrer"
+            className="partner-logo"
+          >
+            <img src="/img/borgnetzwerk_logo.png" alt="Borgnetzwerk" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
